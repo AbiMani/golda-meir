@@ -7,16 +7,28 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active" style="height: 100vh">
-            <img class="d-block w-100" src="image/imag4.jpg" alt="First slide">
+            <img class="d-block w-100" src="image/carrusel2.png" alt="First slide">
         </div>
         <div class="carousel-item" style="height: 100vh">
-            <img class="d-block w-100" src="image/imag5.jpg" alt="Second slide">
+            <img class="d-block w-100" src="image/carrusel3.png" alt="Second slide">
         </div>
         <div class="carousel-item" style="height: 100vh">
-            <img class="d-block w-100" src="image/imag6.jpg" alt="Third slide">
+            <img class="d-block w-100" src="image/carrusel4.png" alt="Third slide">
+        </div>
+        <div class="carousel-item" style="height: 100vh">
+            <img class="d-block w-100" src="image/carrusel5.png" alt="fourd slide">
+        </div>
+        <div class="carousel-item" style="height: 100vh">
+            <img class="d-block w-100" src="image/carrusel6.png" alt="fiferd slide">
+        </div>
+        <div class="carousel-item" style="height: 100vh">
+            <img class="d-block w-100" src="image/carrusel1.png" alt="sixerd slide">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -29,29 +41,24 @@
     </a>
 </div>
 <!--carrouserl-->
-<section class="container-fluid">
-    <div class="row" style="height: 400px; background-color: #9bbd8c ">
-        
-        <div class="col-xs-12 col-md-8 ml-5 align-self-center">
+<div class="container-fluid">
+    <div class="row color1">
+        <div class="col-10">
             <h1>Inscripcion 2021</h1>
             <p class="lead">
                En esta seccion puede ver lo necesario para el ingreso en el año 2021 
             </p>
-            
-        </div> 
-    </div>
-</section>
-<section class="container-fluid">
-    <div class="row" style="height: 400px">
-        <div class="col-xs-12 col-md-8 ml-5 align-self-center" >
-            <h2>Noticias
-            </h2>
-            
         </div>
         
     </div>
-    
-</section>
-
-
+    <div class="row color2">
+        <div class="col-8 align-self-center">
+            <h2>Noticias
+            </h2>
+        </div>
+        <div class="col-2 align-self-center">
+            <h2>Facebook</h2>
+        </div>
+    </div>
+</div>
 @endsection

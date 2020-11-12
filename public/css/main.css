@@ -1,7 +1,18 @@
-
+.color1{
+    background-color: #bbbb8b;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color2{
+    background-color: #7f8166;
+    height: 400px;
+    justify-content: center;
+}
 /* navbar */
 .navbar-custom {
-    background: #5a784c;
+    background: #f1f1e1;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     border: none;
@@ -12,14 +23,14 @@
 }
 
 .navbar-custom .navbar-brand {
-    color: white;
+    color: black;
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-    color: white;
+    color:black;
 }
 
 .navbar-custom .navbar-nav {
@@ -27,7 +38,7 @@
 }
 
 .navbar-custom .navbar-nav li a {
-    color: white;
+    color: black;
     margin-right: 1rem;
 }
 
@@ -38,23 +49,23 @@
 
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
-    color: white;
+    color: black;
 }
 
 .navbar-custom .navbar-nav li.active a {
-    color: white;
+    color: black;
     background: #18BC9C;
 }
 
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
-    color: white;
+    color: black;
     background: #18BC9C;
 }
 
 .navbar-custom .navbar-toggle {
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-size: 10px;
     border-color: white;
@@ -63,7 +74,7 @@
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
     background-color: #18BC9C;
-    color: white;
+    color: black;
     border-color: #18BC9C;
 }
 
@@ -92,7 +103,7 @@
 
 .footer-style {
     padding-top: 50px;
-    background-color: #5a784c;
+    background-color: #45451c;
 }
 footer {
   color: white;
@@ -110,4 +121,23 @@ footer .footer-col {
 }
 footer .footer-below {
   padding: 25px 0;
+
+}
+/* g. Footer bottom section */
+.footer-bottom{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #5c5c30;
+}
  
+.social:hover {
+     -webkit-transform: scale(1.0);
+     -webkit-transition-duration: 0.5s;
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     color: white;
+     
+ }

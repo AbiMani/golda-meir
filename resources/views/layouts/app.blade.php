@@ -26,7 +26,7 @@
 
 <!-- Body -->
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top px-5">
         <a class="navbar-brand" href="{{ url('/') }}"><img src="image/index.jpeg" width="40" height="40" class="d-inline-block" alt="logo Colegio Golda Meir">Colegio Golda Meir</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,19 +34,19 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link active" href="{{ url('/') }}">Inicio</a>
-                <a class="nav-item nav-link" href="#">Quienes Somos</a>
-                <a class="nav-item nav-link" href="#">Oferta Academica</a>
-                <a class="nav-item nav-link" href="#">Contacto</a>
-                <a class="nav-item nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="nav-item nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="nav-item nav-link" href="{{ url('quienesSomos') }}">Quienes Somos</a>
+                <a class="nav-item nav-link" href="{{ url('ofertaAcademica') }}">Oferta Academica</a>
+                <a class="nav-item nav-link" href="{{ url('contacto') }}">Contacto</a>
+                <a class="nav-item nav-link" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a class="nav-item nav-link" href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
             </div>
         </div>
     </nav>
 
-        <main class="py-4">
+    <main >
 
             @yield('content')
-        </main>
+    </main>
    
     <!-- jQuery first, then Popper.js-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -63,23 +63,18 @@
             <div class="col-md-4 footer-col">
                 <h3>Dirección</h3>
                 <p>
-                    CABA - Argentina <br />
-                    carrasco 400
+                    23 Avenida Norte y 3a Calle poniente <br />
+                    Atrás del Instituto Central de Señoritas <br/>
+                    San Salvador
                 </p>
             </div>
             <div class="col-md-4 footer-col">
-                <h3>Mis redes</h3>
-                <ul class="list-inline">
-                    <li>
-                        <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
+                <h3>Contactanos</h3>
+                <div class="text-center center-block">
+                    <a href=""><i id="social-fa" class="fab fa-facebook-square fa-3x social"></i></a>
+                    <a href=""><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
+                    <a href=""><i id="social-in"  class="fab fa-instagram-square fa-3x social"></i></a>
+                </div>
             </div>
             <div class="col-md-4 footer-col">
                 <h3>Trabajo FreeLancer</h3>
@@ -89,5 +84,8 @@
     </div>
 </footer>
 <!-- Footer -->
+<div class="footer-bottom">
+        Copyright © 2020, All Rights Reserved
+    </div>
 
 </html>
