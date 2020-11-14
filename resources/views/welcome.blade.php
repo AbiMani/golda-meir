@@ -51,13 +51,33 @@
         </div>
         
     </div>
-    <div class="row color2">
-        <div class="col-8 align-self-center">
-            <h2>Noticias
-            </h2>
+    <div class="row d-flex py-5">
+        <div class="col-8 pl-5">
+            <h2 class="text-center pb-3">Noticias</h2>
+            <div class="col-sm-11 col-md-12">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <!--Publicaciones Facebook-->
+                        <div class="fb-post px-1" data-href="https://www.facebook.com/colegiogoldameir/posts/3498133363610358" data-show-text="true" data-width="350"><blockquote cite="https://www.facebook.com/colegiogoldameir/posts/3498133363610358" class="fb-xfbml-parse-ignore"><p>Esta información es importante para usted. Si quiere conocer mas de esto contacte con: Pr. Santana en colecturía. Buen día y Dios les bendiga.</p>Publicado por <a href="https://www.facebook.com/colegiogoldameir/">Colegio Golda Meir</a> en&nbsp;<a href="https://www.facebook.com/colegiogoldameir/posts/3498133363610358">Jueves, 12 de noviembre de 2020</a></blockquote></div>
+                        
+                    
+                       <div class="fb-post px-1" data-href="https://www.facebook.com/colegiogoldameir/posts/3378465015577194" data-show-text="true" data-width="350"><blockquote cite="https://www.facebook.com/colegiogoldameir/posts/3378465015577194" class="fb-xfbml-parse-ignore"><p>Gracias a Dios por este día, Feliz dia de los Niños #diadelniño2020</p>Publicado por <a href="https://www.facebook.com/colegiogoldameir/">Colegio Golda Meir</a> en&nbsp;<a href="https://www.facebook.com/colegiogoldameir/posts/3378465015577194">Jueves, 1 de octubre de 2020</a></blockquote></div> 
+                    <!--Publicaciones Facebook-->
+                    </div>
+                  </div>
+            </div>
         </div>
-        <div class="col-2 align-self-center">
-            <h2>Facebook</h2>
+        <div class="col-4 pr-5 d-flex flex-column justify-content-end align-self-end">
+            <h2 class="text-center pb-3">Facebook</h2>
+            <div>
+                <div class="card">
+                  <div class="card-body">
+                    <!-- Page Facebook-->
+                    <div class="fb-page" data-href="https://www.facebook.com/colegiogoldameir" data-tabs="timeline" data-width="600" data-height="579" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/colegiogoldameir" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/colegiogoldameir">Colegio Golda Meir</a></blockquote></div>
+                    <!-- Page Facebook-->
+                  </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

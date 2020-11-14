@@ -8,8 +8,36 @@
 .color2{
     background-color: #7f8166;
     height: 400px;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+.cardmy{
+    background-color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px; 
+    margin-right: 5px;
+
+
+}
+.cardPar{
+    background-color: #bbbb8b;
+    margin: 8px;
+    border-color: #bbbb8b;
+    border-radius: 0;
+}
+.cardPri{
+    background-color: #7f8166;
+    margin: 8px;
+    border-color: #7f8166;
+    border-radius: 0;
+}
+
 /* navbar */
 .navbar-custom {
     background: #f1f1e1;
@@ -80,7 +108,7 @@
 
 @media (min-width: 768px) {
     .navbar-custom {
-        padding: 25px 0;
+        padding: 10px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -141,3 +169,4 @@ footer .footer-below {
      color: white;
      
  }
+

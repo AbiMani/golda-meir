@@ -53,6 +53,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!--facebook-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0" nonce="KadqK45Z"></script>
 </body>
 <!-- Body -->
 
@@ -77,8 +81,12 @@
                 </div>
             </div>
             <div class="col-md-4 footer-col">
-                <h3>Trabajo FreeLancer</h3>
-                <p>Tengo más de X años de experiencia en maquetación web y me apasiona lo que hago!</p>
+                <h3>Acertate a nosotros</h3>
+                <div class="center-block">
+                    <p><i class="fas fa-phone-square "></i> Tel: 2508-6869</p>
+                    <p><i class="fas fa-at"></i> goldameir@gmail.com</p>
+                </div>
+                
             </div>
         </div>
     </div>
