@@ -27,13 +27,13 @@
 <!-- Body -->
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top px-5">
-        <a class="navbar-brand" href="{{ url('/') }}"><img src="image/index.jpeg" width="40" height="40" class="d-inline-block" alt="logo Colegio Golda Meir">Colegio Golda Meir</a>
+        <a class="navbar-brand" href="{{ url('/') }}"><img src="image/goldaMeir.jpeg" width="50" height="50" class="d-inline-block mr-3 rounded-circle" alt="logo Colegio Golda Meir">Colegio Golda Meir</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active" href="{{ url('/') }}">Inicio</a>
+                <a class="nav-item nav-link " href="{{ url('/') }}">Inicio</a>
                 <a class="nav-item nav-link" href="{{ url('quienesSomos') }}">Quienes Somos</a>
                 <a class="nav-item nav-link" href="{{ url('ofertaAcademica') }}">Oferta Academica</a>
                 <a class="nav-item nav-link" href="{{ url('contacto') }}">Contacto</a>
