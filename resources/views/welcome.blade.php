@@ -22,40 +22,40 @@
             <img class="d-block w-100" src="image/carrusel4.jpeg" alt="Third slide">
         </div>
         <div class="carousel-item" >
-            <img class="d-block w-100" src="image/carrusel5.jpeg" alt="fourd slide">
+            <img class="d-block w-100" src="image/carrusel5.jpeg" alt="fouth slide">
         </div>
         <div class="carousel-item" >
-            <img class="d-block w-100" src="image/carrusel6.jpeg" alt="fiferd slide">
+            <img class="d-block w-100" src="image/carrusel6.jpeg" alt="fifth slide">
         </div>
         <div class="carousel-item" >
-            <img class="d-block w-100" src="image/carrusel1.jpeg" alt="sixerd slide">
+            <img class="d-block w-100" src="image/carrusel1.jpeg" alt="sixth slide">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only">Anterior</span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only">Siguiente</span>
     </a>
 </div>
 <!--carrouserl-->
 <div class="container-fluid">
-    <div class="row color1 py-5 d-flex flex-row justify-content-center">
-        <div class="col-xs-9 col-md-9">
-            <h1>Inscripción 2021</h1>
+    <div class="row color1 py-5 ">
+        <div class="col-sm-9 col-md-8">
+            <h1 class="display-4">Inscripción 2021</h1>
             <p class="lead">
-               En esta seccion puede ver lo necesario para el ingreso en el año 2021 
+               En esta seccion puede ver lo necesario para nuevo ingreso en el año 2021 
             </p>
         </div>
-        <div class="col-xs-2 col-md-2">
-            <a class="btn btn-dark btn-lg" href="{{ url('ofertaAcademica') }}">Oferta Academica</a>
+        <div class="col-sm-2 col-md-2">
+            <a class="btn btn-dark btn-lg text-uppercase" href="{{ url('ofertaAcademica') }}">Oferta Academica</a>
         </div>
     </div>
-    <div class="row d-flex py-5 ">
-        <div class="col-xs-8 col-md-8 pl-5 pb-3 ">
-            <h2 class="text-center pb-3">Noticias</h2>
+    <div class="row d-flex py-5 px-md-5">
+        <div class="col-sm-8 col-md-8 pb-3 ">
+            <h3 class="display-4 text-center pb-3">Noticias</h3>
             <div class="col-sm-11 col-md-12 ">
                 <div class="card text-center d-flex flex-row">
                   <div class="card-body">
@@ -69,8 +69,8 @@
                   </div>
             </div>
         </div>
-        <div class="col-xs-4 col-md-4 pr-5 d-flex flex-column justify-content-end align-self-start ">
-            <h2 class="text-center py-3">Facebook</h2>
+        <div class="col-sm-4 col-md-4">
+            <h3 class="display-4 text-center py-3">Facebook</h3>
             <div>
                 <div class="card text-center">
                   <div class="card-body">

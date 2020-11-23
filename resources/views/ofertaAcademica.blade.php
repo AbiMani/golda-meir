@@ -76,58 +76,71 @@
 	<div class="row ">
 		<div class=" px-5 card-deck">
 		  <div class="card">
-		    <img class="card-img-top img-fluid" src="image/verde.png" alt="Card image cap">
-		    <div class="card-body">
-		      <h5 class="card-title text-center">Formación Integral</h5>
-		      <p class="card-text">Nuestro programa de estudio esta actualizado conforme a los reqiosotps exigidos por el MINED, procurando obtener el máximo de renidmiento en cada uno de sus estudiantes.</p>
-		      
-		    </div>
-		  </div>
-		  <div class="card">
-		    <img class="card-img-top img-fluid" src="image/verde.png" alt="Card image cap">
+		    <img class="card-img-top img-fluid" src="" alt="" style="background-color: #474711; height: 130px;">
 		    <div class="text-center">
-		    	<img src="image/english.png" alt="" class="cardimage" height="100px" width="100px">
+		    	<img src="image/evaluation.png" alt="" class="cardimage rounded-circle" height="100px" width="100px">
 		    </div>
 		    <div class="card-body">
-		      <h5 class="card-title text-center">Idioma Ingles</h5>
-		      <p class="card-text">La formación educativa en el idioma ingles aporta a los estudiantes ir más allá del aprendizaje de materias basicas expendiendo sus conomientos.</p>
+		      <h5 class="card-title text-center text-uppercase font-weight-bold">Formación Integral</h5>
+		      <p class="card-text text-justify">Nuestro programa de estudio esta actualizado conforme a los reqiosotps exigidos por el MINED, procurando obtener el máximo de renidmiento en cada uno de sus estudiantes.</p>
 		      
 		    </div>
 		  </div>
 		  <div class="card">
-		    <img class="card-img-top img-fluid" src="image/verde.png" alt="Card image cap">
+		    <img class="card-img-top img-fluid" src="" alt="" style="background-color: #474711; height: 130px;">
+		    <div class="text-center">
+		    	<img src="image/blackboard.png" alt="" class="cardimage rounded-circle" height="100px" width="100px">
+		    </div>
 		    <div class="card-body">
-		      <h5 class="card-title text-center">Educación Cristiana</h5>
-		      <p class="card-text">La base para alcanzar la transformación de los estudiantes es el conocimiento de valores morales y espirituales por medio de las Sagradas Escrituras.</p>
+		      <h5 class="card-title text-center text-uppercase font-weight-bold">Idioma Ingles</h5>
+		      <p class="card-text text-justify">La formación educativa en el idioma ingles aporta a los estudiantes ir más allá del aprendizaje de materias basicas expendiendo sus conomientos.</p>
+		      
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top img-fluid" src="" alt="" style="background-color: #474711; height: 130px;">
+		    <div class="text-center">
+		    	<img src="image/bible(1).png" alt="" class="cardimage rounded-circle" height="100px" width="100px " style="background-color: #f34f35">
+		    </div>
+		    <div class="card-body">
+		      <h5 class="card-title text-center text-uppercase font-weight-bold">Educación Cristiana</h5>
+		      <p class="card-text text-justify">La base para alcanzar la transformación de los estudiantes es el conocimiento de valores morales y espirituales por medio de las Sagradas Escrituras.</p>
 		      
 		    </div>
 		  </div>
 		</div>
 	</div>
-	<div class="row flex-row">
-		<div class=" py-5 px-5 card-deck d-flex justify-content-center">
-		  <div class="card col-md-4">
-		    <img class="card-img-top" src="image/verde.png" alt="Card image cap">
+
+	<div class="row d-flex justify-content-center">
+		<div class="col-md-9 pt-5 pb-3 px-5 card-deck ">
+		  <div class="card ">
+		    <img class="card-img-top img-fluid" src="" alt="" style="background-color: #474711; height: 130px; ">
+		    <div class="text-center">
+		    	<img src="image/electric-guitar.png" alt="" class="cardimage rounded-circle" height="100px" width="100px">
+		    </div>
 		    <div class="card-body">
-		      <h5 class="card-title text-center">Educación Musical</h5>
-		      <p class="card-text">Como parte del desarrollo de los talentos dedicamos tiempo de nuestros estudios para la educación musical, consientes de la necesidad de desarrollar potencial hacia la música.</p>
+		      <h5 class="card-title text-center text-uppercase font-weight-bold">Educación Musical</h5>
+		      <p class="card-text text-justify">Como parte del desarrollo de los talentos dedicamos tiempo de nuestros estudios para la educación musical, consientes de la necesidad de desarrollar potencial hacia la música.</p>
 		      
 		    </div>
 		  </div>
-		  <div class="card col-md-4">
-		    <img class="card-img-top" src="image/verde.png" alt="Card image cap">
+		  <div class="card ">
+		    <img class="card-img-top img-fluid" src="" alt="" style="background-color: #474711; height: 130px;">
+		    <div class="text-center">
+		    	<img src="image/running.png" alt="" class="cardimage rounded-circle" height="100px" width="100px">
+		    </div>
 		    <div class="card-body">
-		      <h5 class="card-title text-center">Educación Física</h5>
-		      <p class="card-text">Para la oprima educación integral en los estudiantes desarrollen adecuadamente sus habilidades fisicas-deportivas en sus respectivos niveles, mejorando y reforzando su sicomotricidad.</p>
+		      <h5 class="card-title text-center text-uppercase font-weight-bold">Educación Física</h5>
+		      <p class="card-text text-justify">Para la oprima educación integral en los estudiantes desarrollen adecuadamente sus habilidades fisicas-deportivas en sus respectivos niveles, mejorando y reforzando su sicomotricidad.</p>
 		      
 		    </div>
 		  </div>
 		</div>
 	</div>
 </div>
-<div class="jumbotron pt-5 mt-5 rounded-0">
-	<div class="container-fluid d-flex flex-row">
-		<div class="col-md-9">
+<div class="jumbotron pt-5 mt-5 rounded-0  " >
+	<div class="container-fluid d-flex flex-sm-row flex-column">
+		<div class="col-sm-6 col-md-9">
 			<h1 class="display-4 pb-2">Requisitos de Admisión Obligatorios</h1>
 			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Aquitir, llenar y entregar la hoja de matricula</p>
 			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Certificado escolar del año anterior</p>
@@ -151,10 +164,10 @@
 		</div>
 		<div class="col-md-3 d-flex align-items-center flex-column align-self-center">
 			<div class="pb-3">
-				<a class="btn btn-danger btn-lg " href="#" >Llenar Ficha de Inscripción</a>
+				<a class="btn btn-danger btn-lg text-uppercase" href="{{ url('formularioInscripcion') }}" ><i class="fas fa-file-signature pr-2"></i>Llenar Ficha de Inscripción</a>
 			</div>
 			<div>
-				<a class="btn btn-light " href="#">Descargar Ficha de Inscripción</a>
+				<a class="btn btn-light text-uppercase " href="#"><i class="fas fa-file-download pr-2"></i>Descargar Ficha de Inscripción</a>
 			</div>
 			
 			
