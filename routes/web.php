@@ -24,3 +24,5 @@ Route::get('/quienesSomos', 'quienesSomosController@index')->name('quienesSomos'
 Route::get('/ofertaAcademica', 'ofertaAcademicaController@index')->name('ofertaAcademica');
 Route::get('/contacto', 'contactoController@index')->name('contacto');
 Route::get('/formularioInscripcion', 'formularioInscripcionController@index')->name('formularioInscripcion');
+
+Route::post('nuevoingreso','formularioInscripcionController@store')->name('nuevoingreso');
