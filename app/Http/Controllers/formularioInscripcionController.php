@@ -10,6 +10,8 @@ use PDF;
 use Illuminate\Http\Request;
 use App\Mail\InscripcionReceived;
 use Illuminate\Support\Facades\Mail;
+//use Dompdf\Dompdf;
+//use Dompdf\Options;
 
 class formularioInscripcionController extends Controller
 {
@@ -20,7 +22,35 @@ class formularioInscripcionController extends Controller
 
     public function store(Request $request){    
         $request->validate([
-            'imageEstudiante' => 'required|image'
+            'nombre' => 'required|max:255',
+            'apellido' => 'required|max:255',
+            'sexo' => 'required',
+            'edad' => 'required|numeric',
+            'meses' => 'required|numeric',
+            'direccion' => 'required|max:255',
+            'idDepartamento' => 'required',
+            'idMunicipio' => 'required|max:255',
+            'imageEstudiante' => 'required|image',
+            'gradoCursado' => 'required|max:255',
+            'gradoACursar' => 'required|max:255',
+            'nombreInstitutoAnterior' => 'required|max:255',
+            'tipoIngreso' => 'required|max:255',
+            'nombreMadre' => 'required|max:255',
+            'apellidoMadre' => 'required|max:255',
+            'numeroDuiMadre' => 'required|numeric|max:99999999',
+            'profesionMadre' => 'required|max:255',
+            'lugarTrabajoMadre' => 'required|max:255',
+            'telefonoMadre' => 'required|numeric|max:99999999',
+            'correoMadre' => 'required|email',
+            'direccionMadre' => 'required|max:255',
+            'nombrePadre' => 'required|max:255',
+            'apellidoPadre' => 'required|max:255',
+            'numeroDuiPadre' => 'required|numeric|max:99999999',
+            'profesionPadre' => 'required|max:255',
+            'lugarTrabajoPadre' => 'required|max:255',
+            'telefonoPadre' => 'required|numeric|max:99999999',
+            'correoPadre' => 'required|email',
+            'direccionPadre' => 'required|max:255'
         ]);
 
 
@@ -92,12 +122,19 @@ class formularioInscripcionController extends Controller
         $responsable->estuRes_id=$idEstu;
         $responsable->save();
 
-        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView("mail.inscripcion", ["estudiante"=>$estu]);
-        //Mail::send('mail.emailInscripcion', compact('estu'), function ($mail) use ($pdf) {
-         //   $mail->to('maryybetr@gmail.com');
-        //    $mail->attachData($pdf->output(), 'inscripcion.pdf');
-         //   $mail->subject("formulario inscripcion");
-        //});
+        //$options =new Options();
+        //$options->set('isRemoteEnable',TRUE);
+
+        //$pdf= new Dompdf($options);
+
+        //$pdf->set_paper("letter", "portrait")
+
+        $pdf = PDF::loadView("mail.inscripcion", ["estudiante"=>$estu]);
+        Mail::send('mail.emailInscripcion', compact('estu'), function ($mail) use ($pdf) {
+           $mail->to('maryybetr@gmail.com');
+           $mail->attachData($pdf->output(), 'inscripcion.pdf');
+           $mail->subject("formulario inscripcion");
+        });
 
         //$mailable = new InscripcionReceived($estu);
         //Mail::to("maryybetr@gmail.com")->send($mailable);

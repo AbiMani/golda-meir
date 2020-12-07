@@ -15,11 +15,16 @@
     <!-- Fonts 
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">-->
-
+<!-- Styles -->
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!-- Styles -->
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="{{asset('css/bootstrap-datepicker3.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap-datepicker.standalone.css')}}">
+
+    
 
 </head>
 <!-- Head -->
@@ -57,6 +62,12 @@
     <!--facebook-->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0" nonce="KadqK45Z"></script>
+    <!-- datepicker-->
+    <script src="{{asset('js/bootstrap-datepicker.js')}}"></script>
+    <!-- Languaje datepicker-->
+    <script src="{{asset('locales/bootstrap-datepicker.es.min.js')}}"></script>
+    
+    
 </body>
 <!-- Body -->
 

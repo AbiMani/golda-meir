@@ -148,7 +148,7 @@ footer {
       <div id="luck">
         <div class="columna">
           <div id="logo">
-            <img src="{{ url('/index.jpeg') }}" alt="logo Colegio Golda Meir" width="50" height="50">
+            <img src="{{ env('APP_URL') }}/index.jpeg" alt="logo Colegio Golda Meir" width="50" height="50">
           </div>
         </div>
 
