@@ -6,10 +6,18 @@ use App\ingreso;
 use App\madreEstudiante;
 use App\padreEstudiante;
 use App\responsable;
+use App\generalSalud;
+use App\enfermedad;
+use App\alergia;
+use App\fractura;
+use App\operado;
+use App\mental;
+use App\contacto;
 use PDF;
 use Illuminate\Http\Request;
 use App\Mail\InscripcionReceived;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 //use Dompdf\Dompdf;
 //use Dompdf\Options;
 
@@ -50,7 +58,17 @@ class formularioInscripcionController extends Controller
             'lugarTrabajoPadre' => 'required|max:255',
             'telefonoPadre' => 'required|numeric|max:99999999',
             'correoPadre' => 'required|email',
-            'direccionPadre' => 'required|max:255'
+            'direccionPadre' => 'required|max:255',
+            'nombreRes' => 'required|max:255',
+            'apellidoRes' => 'required|max:255',
+            'numeroDuiRes' => 'required|numeric|max:99999999',
+            'profesionRes' => 'required|max:255',
+            'lugarTrabajoRes' => 'required|max:255',
+            'telefonoRes' => 'required|numeric|max:99999999',
+            'correoRes' => 'required|email',
+            'direccionRes' => 'required|max:255',
+            'peso'=>'required',
+            'talla'=>'required',
         ]);
 
 
@@ -68,8 +86,10 @@ class formularioInscripcionController extends Controller
         if($request->hasFile('imageEstudiante')){
             $file = $request->file('imageEstudiante');
             $nombreImage=$file->getClientOriginalName();
+            Storage::disk('public')->put('/$nombreImage',$file);
             $file->move('images',$nombreImage);
             $estudiante->ruta=$nombreImage;
+
         }
 
     	$estudiante->save();
@@ -122,6 +142,101 @@ class formularioInscripcionController extends Controller
         $responsable->estuRes_id=$idEstu;
         $responsable->save();
 
+        $salud = new generalSalud;
+        $salud->tipoSangre=$request->get('tipoSangre');
+        $salud->peso=$request->get('peso');
+        $salud->talla=$request->get('talla');
+        $salud->estGS_id=$idEstu;
+        $salud->save();
+
+        $enf=$request->get('enfermedad');
+
+        if($request->enfermedad=='1'){
+            $enfermedad = new enfermedad;
+            $enfermedad->nomEnf= $request->get('nomEnf');
+            $enfermedad->descripcionEnf=$request->get('descripcionEnf');
+            $enfermedad->txEnf=$request->get('txEnf');
+            $enfermedad->nomMedico=$request->get('nomMedico');
+            $enfermedad->telMedico=$request->get('telMedico');
+            $enfermedad->estEn_id=$idEstu;
+            $enfermedad->save();
+        }
+        if($request->alergia=='1'){
+            $alergia = new alergia;
+            $alergia->mediAlergia= $request->get('mediAlergia');
+            $alergia->descripcionAlergia=$request->get('descripcionAlergia');
+            $alergia->otraAlergia=$request->get('otraAlergia');
+            $alergia->descripcionOtra=$request->get('descripcionOtra');
+            $alergia->estA_id=$idEstu;
+            $alergia->save();
+        }
+        if($request->fractura=='1'){
+            $fractura = new fractura;
+            $fractura->areaAfectada= $request->get('areaAfectada');
+            $fractura->secuelaFrac=$request->get('secuelaFrac');
+            $fractura->txFrac=$request->get('txFrac');
+            $fractura->estFr_id=$idEstu;
+            $fractura->save();
+        }
+        if($request->operado=='1'){
+            $operado = new operado;
+            $operado->descripcionOp= $request->get('descripcionOp');
+            $operado->secuelasOp=$request->get('secuelasOp');
+            $operado->txOp=$request->get('txOp');
+            $operado->estOp_id=$idEstu;
+            $operado->save();
+        }
+        if($request->hiperactividad=='1'){
+            if($request->hiperactividadMedicamento=='1'){
+                $mental = new mental;
+                $mental->nomMedHipera== $request->get('nomMedHipera');
+                if($request->aprendizaje=='1'){
+                    $mental->desProbAprendizaje=$request->get('desProbAprendizaje');
+                }
+                if($request->problemaEnf=='1'){
+                    $mental->desProbMedicoG=$request->get('desProbMedicoG');
+                }
+                $mental->estM_id=$idEstu;
+                $mental->save(); 
+            }
+        }
+        $contc = new contacto;
+        $contc->nomContac=$request->get('nomContacto1');
+        $contc->parentescoContacto=$request->get('parentescoContacto1');
+        $contc->telContacto=$request->get('telContacto1');
+        $contc->celContacto=$request->get('celContacto1');
+        $contc->estCont_id=$idEstu;
+        $contc->save();
+        $contc = new contacto;
+        $contc->nomContac=$request->get('nomContacto2');
+        $contc->parentescoContacto=$request->get('parentescoContacto2');
+        $contc->telContacto=$request->get('telContacto2');
+        $contc->celContacto=$request->get('celContacto2');
+        $contc->estCont_id=$idEstu;
+        $contc->save();
+
+        if($request->com!=='1'){
+            if ($request->com!=='2') {
+                $com='3';
+            } else {
+                $com='2';
+            }
+        }else{
+            $com='1';
+        }
+        $naci=$request->get('nacionalidad');
+
+        if($request->aut!=='1'){
+            
+            if ($request->aut=='2') {
+                $au='2';
+            } else {
+                $au='3';
+            }
+        }else{
+            $au='1';
+        }
+        
         //$options =new Options();
         //$options->set('isRemoteEnable',TRUE);
 
@@ -129,9 +244,9 @@ class formularioInscripcionController extends Controller
 
         //$pdf->set_paper("letter", "portrait")
 
-        $pdf = PDF::loadView("mail.inscripcion", ["estudiante"=>$estu]);
+        $pdf = PDF::loadView("mail.inscripcion", compact('estu','com','naci','au'));
         Mail::send('mail.emailInscripcion', compact('estu'), function ($mail) use ($pdf) {
-           $mail->to('maryybetr@gmail.com');
+           $mail->to('nayomi.viana@gmail.com');
            $mail->attachData($pdf->output(), 'inscripcion.pdf');
            $mail->subject("formulario inscripcion");
         });
@@ -141,5 +256,9 @@ class formularioInscripcionController extends Controller
 
         return $pdf->download('inscripcion.pdf');
         return redirect()->route('ofertaAcademica');
+    }
+    public function download_formulario(){
+        $pathToFile = "FICHAAÑO 2021.docx";
+        return response()->download($pathToFile);
     }
 }

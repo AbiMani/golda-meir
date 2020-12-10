@@ -50,7 +50,7 @@
 			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Desarrollar la eprsonalidad, las aptitudes y la capacidad mental y física de estos hasta el máximo de sus posibilidades.</p>
 			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Inculcar el respeto a los derechos humanos y a las libertades fundamentales y los principios consagrados en la Carta de las Naciones Unidas.</p>
 			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Inculcar el respeto a su familia, a su propia identidad cultural, a su idioma y a los valores del país donde vive, ó del que sea originario ya las civilizaciones distintas de la suya.</p>
-			<p class="lead  "><i class="fas fa-genderless pr-2"></i>Prepararle para asumir una vida responsable en una sociedad libre, con espiritu de comprensión, paz, tolerancia, igualdad e inclusión.</p>
+			<p class="lead  "><i class="fab fa-diaspora pr-2"></i>Prepararle para asumir una vida responsable en una sociedad libre, con espiritu de comprensión, paz, tolerancia, igualdad e inclusión.</p>
 		</div>
 		<div class="col-sm-4 col-md-4 text-justify d-flex align-items-center flex-column">
 			<img src="{{asset('image/success.png')}}" alt="Mision" width="100" height="100">

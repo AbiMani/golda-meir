@@ -167,7 +167,7 @@
 				<a class="btn btn-danger btn-lg text-uppercase" href="{{ url('formularioInscripcion') }}" ><i class="fas fa-file-signature pr-2"></i>Llenar Ficha de Inscripción</a>
 			</div>
 			<div>
-				<a class="btn btn-light text-uppercase " href="#"><i class="fas fa-file-download pr-2"></i>Descargar Ficha de Inscripción</a>
+				<a class="btn btn-light text-uppercase " href="{{url('downloadForm')}}"><i class="fas fa-file-download pr-2"></i>Descargar Ficha de Inscripción</a>
 			</div>
 			
 			

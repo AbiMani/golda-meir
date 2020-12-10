@@ -26,7 +26,7 @@ class estudiante extends Model
 
     ];
 
-
+//relacion uno a uno
     public function ingreso(){
         return $this->hasOne('App\ingreso', 'estudiante_id','idEstudiante');
     }
@@ -40,7 +40,28 @@ class estudiante extends Model
     public function responsable(){
         return $this->hasOne('App\responsable','estuRes_id','idEstudiante');
     }
-    
+    public function enfermedad(){
+        return $this->hasOne('App\enfermedad','estEn_id','idEstudiante');
+    }
+    public function alergia(){
+        return $this->hasOne('App\alergia','estA_id','idEstudiante');
+    }
+    public function fractura(){
+        return $this->hasOne('App\fractura','estFr_id','idEstudiante');
+    }
+    public function operados(){
+        return $this->hasOne('App\operado','estOp_id','idEstudiante');
+    }
+    public function generalSalud(){
+        return $this->hasOne('App\generalSalud','estGS_id','idEstudiante');
+    }
+    public function mental(){
+        return $this->hasOne('App\mental','estM_id','idEstudiante');
+    }
+//relacion uno a muchos
+    public function contactos(){
+        return $this->hasMany('App\contacto','estCont_id','idEstudiante');
+    }
     
 
 }

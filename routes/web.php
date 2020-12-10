@@ -26,3 +26,6 @@ Route::get('/contacto', 'contactoController@index')->name('contacto');
 Route::get('/formularioInscripcion', 'formularioInscripcionController@index')->name('formularioInscripcion');
 
 Route::post('nuevoingreso','formularioInscripcionController@store')->name('nuevoingreso');
+
+
+Route::get('download_formulario', 'formularioInscipcionController@download_formulario')->name('downloadForm');

@@ -43,7 +43,7 @@
                 <a class="nav-item nav-link {{ request()->is('ofertaAcademica') ? 'active' : ''}}" href="{{ url('ofertaAcademica') }}">Oferta Academica</a>
                 <a class="nav-item nav-link {{ request()->is('contacto') ? 'active' : ''}}" href="{{ url('contacto') }}">Contacto</a>
                 <a class="nav-item nav-link" href="https://www.facebook.com/colegiogoldameir"><i class="fab fa-facebook-square fa-2x"></i></a>
-                <a class="nav-item nav-link" href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                <a class="nav-item nav-link" href="https://www.instagram.com/colegio_golda_meir/"><i class="fab fa-instagram-square fa-2x"></i></a>
             </div>
         </div>
     </nav>
@@ -88,7 +88,7 @@
                 <div class="text-center center-block">
                     <a href="https://www.facebook.com/colegiogoldameir"><i id="social-fa" class="fab fa-facebook-square fa-3x social"></i></a>
                     <a href=""><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
-                    <a href=""><i id="social-in"  class="fab fa-instagram-square fa-3x social"></i></a>
+                    <a href="https://www.instagram.com/colegio_golda_meir/"><i id="social-in"  class="fab fa-instagram-square fa-3x social"></i></a>
                 </div>
             </div>
             <div class="col-md-4 footer-col">
