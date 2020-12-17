@@ -82,7 +82,7 @@
 		    </div>
 		    <div class="card-body">
 		      <h5 class="card-title text-center text-uppercase font-weight-bold">Formación Integral</h5>
-		      <p class="card-text text-justify">Nuestro programa de estudio esta actualizado conforme a los reqiosotps exigidos por el MINED, procurando obtener el máximo de renidmiento en cada uno de sus estudiantes.</p>
+		      <p class="card-text text-justify">Nuestro programa de estudio esta actualizado conforme a los requisitos exigidos por el MINED, procurando obtener el máximo de rendimiento en cada uno de sus estudiantes.</p>
 		      
 		    </div>
 		  </div>
@@ -93,7 +93,7 @@
 		    </div>
 		    <div class="card-body">
 		      <h5 class="card-title text-center text-uppercase font-weight-bold">Idioma Ingles</h5>
-		      <p class="card-text text-justify">La formación educativa en el idioma ingles aporta a los estudiantes ir más allá del aprendizaje de materias basicas expendiendo sus conomientos.</p>
+		      <p class="card-text text-justify">La formación educativa en el idioma ingles aporta a los estudiantes ir más allá del aprendizaje de materias basicas extendiendo sus conomientos.</p>
 		      
 		    </div>
 		  </div>
@@ -131,7 +131,7 @@
 		    </div>
 		    <div class="card-body">
 		      <h5 class="card-title text-center text-uppercase font-weight-bold">Educación Física</h5>
-		      <p class="card-text text-justify">Para la oprima educación integral en los estudiantes desarrollen adecuadamente sus habilidades fisicas-deportivas en sus respectivos niveles, mejorando y reforzando su sicomotricidad.</p>
+		      <p class="card-text text-justify">Para la óptima educación integral en los estudiantes y para que desarrollen adecuadamente sus habilidades fisicas-deportivas en sus respectivos niveles, mejorando y reforzando su sicomotricidad.</p>
 		      
 		    </div>
 		  </div>
@@ -142,18 +142,18 @@
 	<div class="container-fluid d-flex flex-sm-row flex-column">
 		<div class="col-sm-6 col-md-9">
 			<h1 class="display-4 pb-2">Requisitos de Admisión Obligatorios</h1>
-			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Aquitir, llenar y entregar la hoja de matricula</p>
+			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Aquirir, llenar y entregar la hoja de matrícula</p>
 			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Certificado escolar del año anterior</p>
 			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Constancia de buena conducta</p>
 			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Partida de Nacimiento Original</p>
 
-			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>1 fotografia del alumno</p>
+			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>1 fotografía del alumno</p>
 
 			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Fotocopia DUI padre y madre y/o responsable</p>
 			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Leer instructivo escolar</p>
 			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Ficha del alumno debidamente llena</p>
 			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Realizar curso de admisión</p>
-			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Telefono movil para uso de plataforma</p>
+			<p class="lead text-center"><i class="fas fa-check fa-1x pr-1"></i>Teléfono móvil para uso de plataforma</p>
 
 
 			<hr class="my-4">
@@ -163,11 +163,14 @@
 			<p>Por ser una institución cristina, se hace énfasis en los valores cristianos y se considera igual de importante que las materias básicas</p>
 		</div>
 		<div class="col-md-3 d-flex align-items-center flex-column align-self-center">
-			<div class="pb-3">
+			<div class="pb-3 ">
 				<a class="btn btn-danger btn-lg text-uppercase" href="{{ url('formularioInscripcion') }}" ><i class="fas fa-file-signature pr-2"></i>Llenar Ficha de Inscripción</a>
 			</div>
-			<div>
-				<a class="btn btn-light text-uppercase " href="{{url('downloadForm')}}"><i class="fas fa-file-download pr-2"></i>Descargar Ficha de Inscripción</a>
+			<div class="pb-3 col-md-8">
+				<a class="btn btn-outline-primary  btn-sm text-uppercase " href="{{url('download')}}"><i class="fas fa-file-word pr-2"></i>Descargar Ficha de Inscripción (DOCX)</a>
+			</div>
+			<div class="col-md-8">
+				<a class="btn btn-outline-danger  btn-sm text-uppercase " href="{{url('download')}}"><i class="fas fa-file-pdf pr-2 fa-2x pull-left"></i>Descargar Ficha de Inscripción (PDF)</a>
 			</div>
 			
 			

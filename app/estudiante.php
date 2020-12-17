@@ -21,8 +21,8 @@ class estudiante extends Model
     	'meses',
     	'direccion',
     	'idDepartamento',
-    	'idMunicipio',
-        'ruta'
+    	'idMunicipio'
+        //'ruta'
 
     ];
 

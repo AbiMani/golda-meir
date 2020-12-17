@@ -38,7 +38,7 @@ class formularioInscripcionController extends Controller
             'direccion' => 'required|max:255',
             'idDepartamento' => 'required',
             'idMunicipio' => 'required|max:255',
-            'imageEstudiante' => 'required|image',
+            //'imageEstudiante' => 'required|image',
             'gradoCursado' => 'required|max:255',
             'gradoACursar' => 'required|max:255',
             'nombreInstitutoAnterior' => 'required|max:255',
@@ -83,14 +83,14 @@ class formularioInscripcionController extends Controller
     	$estudiante->idDepartamento=$request->get('idDepartamento');
     	$estudiante->idMunicipio=$request->get('idMunicipio');
 
-        if($request->hasFile('imageEstudiante')){
+        /*if($request->hasFile('imageEstudiante')){
             $file = $request->file('imageEstudiante');
             $nombreImage=$file->getClientOriginalName();
             Storage::disk('public')->put('/$nombreImage',$file);
             $file->move('images',$nombreImage);
             $estudiante->ruta=$nombreImage;
 
-        }
+        }*/
 
     	$estudiante->save();
 
@@ -243,18 +243,24 @@ class formularioInscripcionController extends Controller
         //$pdf= new Dompdf($options);
 
         //$pdf->set_paper("letter", "portrait")
+        //creacion de pdf
+        $pdf = PDF::loadView("mail.inscripcion", compact('estu','com','naci','au'))->output();
 
-        $pdf = PDF::loadView("mail.inscripcion", compact('estu','com','naci','au'));
-        Mail::send('mail.emailInscripcion', compact('estu'), function ($mail) use ($pdf) {
+        //Nombre del Documento.
+        $nombreArchivo = "inscripcion-".$request->nombre.".pdf";
+        $subject=$request->nombre;
+        //almacena pdf en storage
+        Storage::disk('public')->put($nombreArchivo,$pdf);
+        //envio de email
+        Mail::send('mail.emailInscripcion', compact('estu'), function ($mail) use ($nombreArchivo,$subject) {
            $mail->to('nayomi.viana@gmail.com');
-           $mail->attachData($pdf->output(), 'inscripcion.pdf');
-           $mail->subject("formulario inscripcion");
+           $mail->attach(public_path(). "/storage/".$nombreArchivo);
+           $mail->subject("Nueva Inscripcion de alumno/a ".$subject);
         });
 
         //$mailable = new InscripcionReceived($estu);
         //Mail::to("maryybetr@gmail.com")->send($mailable);
 
-        return $pdf->download('inscripcion.pdf');
         return redirect()->route('ofertaAcademica');
     }
     public function download_formulario(){

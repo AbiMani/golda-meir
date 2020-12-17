@@ -102,6 +102,8 @@
 
       <h3>FICHA DE INSCRIPCION 2021</h3>
 
+      <!--<img width="100px" src="/storage/7ebBkPH1WbI9odrFayAVE77N8lkem3nCX5GncVs7.jpg" -->
+
       <h4>I. Datos de estudiante</h4>
       <p><b>Nombres:</b> {{$estu->nombre}} &nbsp;&nbsp;<b>Apellidos:</b>  {{$estu->apellido}}&nbsp;&nbsp;<b>Fecha de nacimiento:</b> {{$estu->fechaNacimiento}} &nbsp;&nbsp;<b>Edad: </b>{{$estu->edad}}  años {{$estu->meses}} meses &nbsp;&nbsp;<b>Direccion completa de donde reside el estudiante: </b>{{$estu->direccion}} &nbsp;&nbsp;<b>Municipio: </b>{{$estu->idMunicipio}} &nbsp;&nbsp;<b>Departamento: </b>{{$estu->idDepartamento}} &nbsp;&nbsp;<b>Sexo: </b>{{$estu->sexo}}.</p>
       <p><b>Grado Cursado:</b> {{$ing->gradoCursado}} &nbsp;&nbsp; <b>Tipo Ingreso: </b>{{$ing->tipoIngreso}} &nbsp;&nbsp; <b>Grado que Cursara:</b> {{$ing->gradoACursar}}&nbsp;&nbsp; <b>Institucion de donde proviene:</b> {{$ing->nombreInstitutoAnterior}}&nbsp;&nbsp; </p>

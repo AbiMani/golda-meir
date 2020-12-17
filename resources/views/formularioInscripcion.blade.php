@@ -28,18 +28,18 @@
 						</div>
 						<div class="form-group col-6 col-md-4">
 						    <label for="apellido" class="required">Apellidos del niño/a</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('apellido')}} "class="form-control" id="apellido" name="apellido" placeholder="apellidos del nino">
+						    <input type="text" value="{{old('apellido')}} "class="form-control" id="apellido" name="apellido" placeholder="apellidos del nino" required>
 						    @error('apellido')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-sm-4 col-md-2">
 						    <label for="fechadenacimiento" class="required">Fecha de nacimiento</label><sub class="red ">*</sub>
-						    <input type="date" name="fechanacimiento" class="form-control" id="fechadenacimiento" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+						    <input type="date" name="fechanacimiento" class="form-control" id="fechadenacimiento" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required>
 						</div>
 						<div class="form-group col-3 col-sm-2 col-md-1">
 						    <label for="edad" class="required">Edad</label><sub class="red ">*</sub>
-						    <select class="form-control" id="edad" name="edad">
+						    <select class="form-control" id="edad" name="edad" required>
 						      <option value="3">3</option>
 						      <option value="4">4</option>
 						      <option value="5">5</option>
@@ -61,7 +61,7 @@
 						  </div>
 						  <div class="form-group col-3 col-sm-2 col-md-1">
 						    <label for="meses" class="required">Meses</label><sub class="red ">*</sub>
-						    <select class="form-control" id="meses" name="meses">
+						    <select class="form-control" id="meses" name="meses" required>
 						      <option value="1">1</option>
 						      <option value="2">2</option>
 						      <option value="3">3</option>
@@ -82,7 +82,7 @@
 				  	<div class="form-row">
 						<div class="form-group col-4 col-md-2">
 						    <label for="sexo" class="required">Sexo</label><sub class="red ">*</sub>
-						    <select class="form-control" id="sexo" name="sexo">
+						    <select class="form-control" id="sexo" name="sexo" required>
 						      <option>Femenino</option>
 						      <option>Masculino</option>
 						    </select>
@@ -91,15 +91,15 @@
 						    @enderror
 						  </div>
 						<div class="form-group col-8 col-md-4">
-						    <label for="direccion" class="required">Direccion</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('direccion')}} "class="form-control" id="direccion" name="direccion" placeholder="direccion de residencia del niño">
+						    <label for="direccion" class="required">Dirección</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('direccion')}} "class="form-control" id="direccion" name="direccion" placeholder="direccion de residencia del niño" required>
 						    @error('direccion')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
 						    <label for="idDepartamento" class="required">Departamento</label><sub class="red ">*</sub>
-						    <select class="form-control" id="idDepartamento" name="idDepartamento">
+						    <select class="form-control" id="idDepartamento" name="idDepartamento" required>
 						      <option value="Ahuachapán">Ahuachapán</option>
 						      <option value="Sonsonate">Sonsonate</option>
 						      <option value="Santa Ana">Santa Ana</option>
@@ -121,7 +121,7 @@
 						</div>
 						<div class="form-group col-6 col-md-2">
 						    <label for="idmunicipio" class="required">Municipio</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('idmunicipio')}} "class="form-control" id="idmunicipio" name="idMunicipio" placeholder="">
+						    <input type="text" value="{{old('idmunicipio')}} "class="form-control" id="idmunicipio" name="idMunicipio" placeholder="" required>
 						    @error('idMunicipio')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
@@ -139,28 +139,28 @@
 				  	<div class="form-row">
 				  		<div class="form-group col-6 col-md-2">
 						    <label for="gradoCursado" class="required">Grado Cursado</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('gradoCursado')}} "class="form-control" id="gradoCursado" name="gradoCursado" placeholder="">
+						    <input type="text" value="{{old('gradoCursado')}} "class="form-control" id="gradoCursado" name="gradoCursado" placeholder="Ej. Parvularia" required>
 						    @error('gradoCursado')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						  </div>
 						  <div class="form-group col-6 col-md-2">
 						    <label for="gradoACursar" class="required">Grado a Cursar</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('gradoACursar')}} "class="form-control" id="gradoACursar" name="gradoACursar" placeholder="">
+						    <input type="text" value="{{old('gradoACursar')}} "class="form-control" id="gradoACursar" name="gradoACursar" placeholder="Ej. Primer grado" required>
 						    @error('gradoACursar')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						  </div>
 						  <div class="form-group col-6 col-md-3">
 						    <label for="nombreInstitutoAnterior" class="required">Instituto Anterior</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('nombreInstitutoAnterior')}} "class="form-control" id="nombreInstitutoAnterior" name="nombreInstitutoAnterior" placeholder="">
+						    <input type="text" value="{{old('nombreInstitutoAnterior')}} "class="form-control" id="nombreInstitutoAnterior" name="nombreInstitutoAnterior" placeholder="Ej. Colegio Golda Meir" required>
 						    @error('nombreIsntitutoAnterior')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-sm-3 col-md-3"><sub class="red ">*</sub>
 						    <label for="tipoIngreso" class="required">Tipo Ingreso:</label>
-						    <select class="form-control" id="tipoIngreso" name="tipoIngreso">
+						    <select class="form-control" id="tipoIngreso" name="tipoIngreso" required>
 						      <option value="Nuevo Ingreso">Nuevo Ingreso</option>
 						      <option value="Antiguo Ingreso">Antiguo Ingreso</option>
 						      <option value="Reingreso">Reingreso</option>
@@ -173,28 +173,28 @@
 				  	<div class="form-row">
 						<div class="form-group col-6 col-md-4">
 						    <label for="nombreMadre" class="required">Nombres de la madre</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('nombreMadre')}} "class="form-control" id="nombreMadre" name="nombreMadre" placeholder="nombre de la madre">
+						    <input type="text" value="{{old('nombreMadre')}} "class="form-control" id="nombreMadre" name="nombreMadre" placeholder="nombre de la madre" required>
 						    @error('nombreMadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						  </div>
 						  <div class="form-group col-6 col-md-4">
 						    <label for="apellidoMadre" class="required">Apellidos de la madre</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('apellidoMadre')}} "class="form-control" id="apellidoMadre" name="apellidoMadre" placeholder="apellidos de la madre">
+						    <input type="text" value="{{old('apellidoMadre')}} "class="form-control" id="apellidoMadre" name="apellidoMadre" placeholder="apellidos de la madre" required>
 						    @error('apellidoMadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
 						    <label for="numeroDuiMadre" class="required">Dui</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('numeroDuiMadre')}} "class="form-control" id="numeroDuiMadre" name="numeroDuiMadre" placeholder="">
+						    <input type="text" value="{{old('numeroDuiMadre')}} "class="form-control" id="numeroDuiMadre" name="numeroDuiMadre" placeholder="125698505" required>
 						    @error('numeroDuiMadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6  col-md-2">
-						    <label for="telefonoMadre" class="required">Numero Telefono</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('telefonoMadre')}} "class="form-control" id="telefonoMadre" name="telefonoMadre" placeholder="">
+						    <label for="telefonoMadre" class="required">Número Teléfono</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('telefonoMadre')}} "class="form-control" id="telefonoMadre" name="telefonoMadre" placeholder="71540000" required>
 						    @error('telefonoMadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
@@ -203,29 +203,29 @@
 				  	<div class="form-row">
 						
 						<div class="form-group col-6 col-md-2">
-						    <label for="profesionMadre" class="required">Profesion</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('profesionMadre')}} "class="form-control" id="profesionMadre" name="profesionMadre" placeholder="">
+						    <label for="profesionMadre" class="required">Profesión</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('profesionMadre')}} "class="form-control" id="profesionMadre" name="profesionMadre" placeholder="Ej. Maestro" required>
 						    @error('profesionMadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group  col-6 col-md-2">
 						    <label for="lugarTrabajoMadre" class="required">Trabajo</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('lugarTrabajoMadre')}} "class="form-control" id="lugarTrabajoMadre" name="lugarTrabajoMadre" placeholder="">
+						    <input type="text" value="{{old('lugarTrabajoMadre')}} "class="form-control" id="lugarTrabajoMadre" name="lugarTrabajoMadre" placeholder="nombre empresa " required>
 						    @error('lugarTrabajoMadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-4">
-						    <label for="direccionMadre" class="required">Direccion</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('direccionMadre')}} "class="form-control" id="direccionMadre" name="direccionMadre" placeholder="">
+						    <label for="direccionMadre" class="required">Dirección</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('direccionMadre')}} "class="form-control" id="direccionMadre" name="direccionMadre" placeholder="" required>
 						    @error('direccionMadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group  col-6 col-md-4">
 						    <label for="correoMadre" class="required">Correo electronico</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('correoMadre')}} "class="form-control" id="correoMadre" name="correoMadre" placeholder="">
+						    <input type="text" value="{{old('correoMadre')}} "class="form-control" id="correoMadre" name="correoMadre" placeholder="Ej. ejemplo@gmail.com" required>
 						    @error('correoMadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
@@ -239,28 +239,28 @@
 				  	<div class="form-row">
 						<div class="form-group col-6 col-md-4">
 						    <label for="nombrePadre" class="required">Nombres de la padre</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('nombrePadre')}} "class="form-control" id="nombrePadre" name="nombrePadre" placeholder="nombre de la padre">
+						    <input type="text" value="{{old('nombrePadre')}} "class="form-control" id="nombrePadre" name="nombrePadre" placeholder="nombre de la padre" required>
 						    @error('nombrePadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						  </div>
 						  <div class="form-group col-6 col-md-4">
 						    <label for="apellidoPadre" class="required">Apellidos de la padre</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('apellidoPadre')}} "class="form-control" id="apellidoPadre" name="apellidoPadre" placeholder="apellidos de la padre">
+						    <input type="text" value="{{old('apellidoPadre')}} "class="form-control" id="apellidoPadre" name="apellidoPadre" placeholder="apellidos de la padre" required>
 						    @error('apellidoPadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
 						    <label for="numeroDuiPadre" class="required">Dui</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('numeroDuiPadre')}} "class="form-control" id="numeroDuiPadre" name="numeroDuiPadre" placeholder="">
+						    <input type="text" value="{{old('numeroDuiPadre')}} "class="form-control" id="numeroDuiPadre" name="numeroDuiPadre" placeholder="125698505" required>
 						    @error('numeroDuiPadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group  col-6 col-md-2">
-						    <label for="telefonoPadre" class="required">Numero Telefono</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('telefonoPadre')}} "class="form-control" id="telefonoPadre" name="telefonoPadre" placeholder="">
+						    <label for="telefonoPadre" class="required">Número Teléfono</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('telefonoPadre')}} "class="form-control" id="telefonoPadre" name="telefonoPadre" placeholder="71540000" required> 
 						    @error('telefonoPadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
@@ -269,29 +269,29 @@
 				  	<div class="form-row">
 						
 						<div class="form-group col-6 col-md-2">
-						    <label for="profesionPadre" class="required">Profesion</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('profesionPadre')}} "class="form-control" id="profesionPadre" name="profesionPadre" placeholder="">
+						    <label for="profesionPadre" class="required">Profesión</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('profesionPadre')}} "class="form-control" id="profesionPadre" name="profesionPadre" placeholder="" required>
 						    @error('profesionPadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
 						    <label for="lugarTrabajoPadre" class="required">Trabajo</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('lugarTrabajoPadre')}} "class="form-control" id="lugarTrabajoPadre" name="lugarTrabajoPadre" placeholder="">
+						    <input type="text" value="{{old('lugarTrabajoPadre')}} "class="form-control" id="lugarTrabajoPadre" name="lugarTrabajoPadre" placeholder="" required>
 						    @error('lugarTrabajoPadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-4">
-						    <label for="direccionPadre" class="required">Direccion</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('direccionPadre')}} "class="form-control" id="direccionPadre" name="direccionPadre" placeholder="">
+						    <label for="direccionPadre" class="required">Dirección</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('direccionPadre')}} "class="form-control" id="direccionPadre" name="direccionPadre" placeholder="" required>
 						    @error('direccionPadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						  </div>
 						  <div class="form-group col-6 col-md-4">
 						    <label for="correoPadre" class="required">Correo electronico</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('correoPadre')}} "class="form-control" id="correoPadre" name="correoPadre" placeholder="">
+						    <input type="text" value="{{old('correoPadre')}} "class="form-control" id="correoPadre" name="correoPadre" placeholder="Ej. ejemplo@gmail.com" required>
 						    @error('correoPadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
@@ -305,28 +305,28 @@
 				  	<div class="form-row">
 						<div class="form-group col-6 col-md-4">
 						    <label for="nombreRes" class="required">Nombres de responsable</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('nombreRes')}} "class="form-control" id="nombreRes" name="nombreRes" placeholder="nombre ">
+						    <input type="text" value="{{old('nombreRes')}} "class="form-control" id="nombreRes" name="nombreRes" placeholder="nombre " required>
 						    @error('nombreRes')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						  </div>
 						  <div class="form-group col-6 col-md-4">
 						    <label for="apellidoRes" class="required">Apellidos de responsable</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('apellidoRes')}} "class="form-control" id="apellidoRes" name="apellidoRes" placeholder="apellidos">
+						    <input type="text" value="{{old('apellidoRes')}} "class="form-control" id="apellidoRes" name="apellidoRes" placeholder="apellidos" required>
 						    @error('apellidoRes')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
 						    <label for="numeroDuiRes" class="required">Dui</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('numeroDuiRes')}} "class="form-control" id="numeroDuiRes" name="numeroDuiRes" placeholder="">
+						    <input type="text" value="{{old('numeroDuiRes')}} "class="form-control" id="numeroDuiRes" name="numeroDuiRes" placeholder="125698505" required>
 						    @error('numeroDuiRes')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="telefonoRes" class="required">Numero Telefono</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('telefonoRes')}} "class="form-control" id="telefonoRes" name="telefonoRes" placeholder="">
+						    <label for="telefonoRes" class="required">Número Teléfono</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('telefonoRes')}} "class="form-control" id="telefonoRes" name="telefonoRes" placeholder="61250000" required>
 						    @error('telefonoRes')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
@@ -335,29 +335,29 @@
 				  	<div class="form-row">
 						
 						<div class="form-group col-6 col-md-2">
-						    <label for="profesionRes" class="required">Profesion</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('profesionRes')}} "class="form-control" id="profesionRes" name="profesionRes" placeholder="">
+						    <label for="profesionRes" class="required">Profesión</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('profesionRes')}} "class="form-control" id="profesionRes" name="profesionRes" placeholder="" required>
 						    @error('profesionRes')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
 						    <label for="lugarTrabajoRes" class="required">Trabajo</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('lugarTrabajoRes')}} "class="form-control" id="lugarTrabajoRes" name="lugarTrabajoRes" placeholder="">
+						    <input type="text" value="{{old('lugarTrabajoRes')}} "class="form-control" id="lugarTrabajoRes" name="lugarTrabajoRes" placeholder="" required>
 						    @error('lugarTrabajoRes')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-4">
-						    <label for="direccionRes" class="required">Direccion</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('direccionRes')}} "class="form-control" id="direccionRes" name="direccionRes" placeholder="">
+						    <label for="direccionRes" class="required">Dirección</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('direccionRes')}} "class="form-control" id="direccionRes" name="direccionRes" placeholder="" required>
 						    @error('direccionRes')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-4">
 						    <label for="correoRes" class="required">Correo electronico</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('correoRes')}} "class="form-control" id="correoRes" name="correoRes" placeholder="">
+						    <input type="text" value="{{old('correoRes')}} "class="form-control" id="correoRes" name="correoRes" placeholder="Ej. ejemplo@gmail.com" required>
 						    @error('correoRes')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
@@ -390,7 +390,7 @@
 						  <div class="form-group col-4 col-md-2">
 						    <label for="peso" class="required">Peso: </label><sub class="red ">*</sub>
 						    <div>
-						    	<input type="text" value="{{old('peso')}} "class="form-control" id="peso" name="peso" placeholder=""><small class="form-text text-muted">Lb.</small>
+						    	<input type="text" value="{{old('peso')}} "class="form-control" id="peso" name="peso" placeholder="" required><small class="form-text text-muted">Lb.</small>
 						    </div>
 						    
 						    @error('peso')
@@ -399,7 +399,7 @@
 						</div>
 						<div class="form-group col-4 col-md-1">
 						    <label for="talla" class="required">Talla</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('talla')}} "class="form-control" id="talla" name="talla" placeholder="">
+						    <input type="text" value="{{old('talla')}} "class="form-control" id="talla" name="talla" placeholder="" required>
 						    @error('talla')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
@@ -439,8 +439,8 @@
 						    <input type="text" value="{{old('nomMedico')}} "class="form-control" id="nomMedico" name="nomMedico" placeholder="">
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="telMedico" class="required">Telefono Medico</label>
-						    <input type="text" value="{{old('telMedico')}} "class="form-control" id="telMedico" name="telMedico" placeholder="">
+						    <label for="telMedico" class="required">Teléfono Medico</label>
+						    <input type="text" value="{{old('telMedico')}} "class="form-control" id="telMedico" name="telMedico" placeholder="Ej. 64150000">
 						</div>
 						<fieldset class="form-group col-6 col-md-3">
 						      <legend class="col-form-label  ">¿Es alergico a medicamentos? <sub class="red ">*</sub></legend> 
@@ -495,7 +495,7 @@
 						        </div>
 						</fieldset>	
 						<div class="form-group col-5 col-md-3">
-						    <label for="areaAfectada" class="required">Area afectada</label>
+						    <label for="areaAfectada" class="required">Área afectada</label>
 						    <input type="text" value="{{old('areaAfectada')}} "class="form-control" id="areaAfectada" name="areaAfectada" placeholder="">
 						</div>
 						<div class="form-group col-6 col-md-3">
@@ -615,65 +615,65 @@
 						
 				  	</div>
 				  	<h5>En caso de emergencia comunicarse con:</h5>
-				  	<p>1. Primer numero de contacto</p>
+				  	<p>1. Primer número de contacto</p>
 				  	<div class="form-row">
 				  		
 						<div class="form-group col-8 col-md-4">
 						    <label for="nomContacto1" class="required">Nombre</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('nomContacto1')}} "class="form-control" id="nomContacto1" name="nomContacto1" placeholder="">
+						    <input type="text" value="{{old('nomContacto1')}} "class="form-control" id="nomContacto1" name="nomContacto1" placeholder="" required>
 						    @error('nomContacto1')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-4 col-md-3">
 						    <label for="parentescoContacto1" class="required">Parentesco</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('parentescoContacto1')}} "class="form-control" id="parentescoContacto1" name="parentescoContacto1" placeholder="">
+						    <input type="text" value="{{old('parentescoContacto1')}} "class="form-control" id="parentescoContacto1" name="parentescoContacto1" placeholder="Ej. Tía" required>
 						    @error('parentescoContacto1')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="telContacto1" class="required">Telefono Casa</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('telContacto1')}} "class="form-control" id="telContacto1" name="telContacto1" placeholder="">
+						    <label for="telContacto1" class="required">Teléfono Casa</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('telContacto1')}} "class="form-control" id="telContacto1" name="telContacto1" placeholder="Ej. 22650000" required> 
 						    @error('telContacto1')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="celContacto1" class="required">Telefono Celular</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('celContacto1')}} "class="form-control" id="celContacto1" name="celContacto1" placeholder="">
+						    <label for="celContacto1" class="required">Teléfono Celular</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('celContacto1')}} "class="form-control" id="celContacto1" name="celContacto1" placeholder="Ej. 71940000" required>
 						    @error('celContacto1')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						</div>	
 				  	</div>
-				  	<p>2. Segundo numero de contacto</p>
+				  	<p>2. Segundo número de contacto</p>
 				  	<div class="form-row">
 				  		
 						<div class="form-group col-8 col-md-4">
 						    <label for="nomContacto2" class="required">Nombre</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('nomContacto2')}} "class="form-control" id="nomContacto2" name="nomContacto2" placeholder="">
+						    <input type="text" value="{{old('nomContacto2')}} "class="form-control" id="nomContacto2" name="nomContacto2" placeholder="" required>
 						    @error('nomContacto2')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-4 col-md-3">
 						    <label for="parentescoContacto2" class="required">Parentesco</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('parentescoContacto2')}} "class="form-control" id="parentescoContacto2" name="parentescoContacto2" placeholder="">
+						    <input type="text" value="{{old('parentescoContacto2')}} "class="form-control" id="parentescoContacto2" name="parentescoContacto2" placeholder="Ej. Abuela" required>
 						    @error('parentescoContacto2')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="telContacto2" class="required">Telefono Casa</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('telContacto2')}} "class="form-control" id="telContacto2" name="telContacto2" placeholder="">
+						    <label for="telContacto2" class="required">Teléfono Casa</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('telContacto2')}} "class="form-control" id="telContacto2" name="telContacto2" placeholder="Ej. 26491131" required>
 						    @error('telContacto2')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="celContacto2" class="required">Telefono Celular</label><sub class="red ">*</sub>
-						    <input type="text" value="{{old('celContacto2')}} "class="form-control" id="celContacto2" name="celContacto2" placeholder="">
+						    <label for="celContacto2" class="required">Teléfono Celular</label><sub class="red ">*</sub>
+						    <input type="text" value="{{old('celContacto2')}} "class="form-control" id="celContacto2" name="celContacto2" placeholder="Ej. 25491141" required>
 						    @error('celContacto2')
 						    	<small>*{{$message}}</small>
 						    @enderror
@@ -696,18 +696,18 @@
 						      <option value="3">Responsable</option>
 						    </select>
 						    <label for="dui" class="required ">Con Dui No.</label>
-						    <input type="text" value="{{old('dui')}} "class="form-control mx-sm-3" id="dui" name="dui" placeholder="">
+						    <input type="text" value="{{old('dui')}} "class="form-control mx-sm-3" id="dui" name="dui" placeholder="125698505" required>
 						    @error('parentescoContacto2')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						    <label for="nacionalidad" class="required">De Nacionalidad</label>
-						    <input type="text" value="{{old('nacionalidad')}} "class="form-control mx-sm-3" id="nacionalidad" name="nacionalidad" placeholder="">
+						    <input type="text" value="{{old('nacionalidad')}} "class="form-control mx-sm-3" id="nacionalidad" name="nacionalidad" placeholder="Ej. Salvadoreo" required>
 						    @error('nacionalidad')
 						    	<small>*{{$message}}</small>
 						    @enderror
 
 						    <label for="domicilio" class="required">Domicilio</label>
-						    <input type="text" value="{{old('domicilio')}} "class="form-control mx-sm-3" id="domicilio" name="domicilio" placeholder="">
+						    <input type="text" value="{{old('domicilio')}} "class="form-control mx-sm-3" id="domicilio" name="domicilio" placeholder="" required>
 						    @error('domicilio')
 						    	<small>*{{$message}}</small>
 						    @enderror
@@ -719,9 +719,9 @@
 				  		
 						<div class="form-group">
 						    <label for="alumno" class="required">En mi responsabilidad de Padre/Madre/Responsable del estudiante </label>
-						    <input type="text" value="{{old('alumno')}} "class="form-control mx-sm-3" id="alumno" name="alumno" placeholder="">
+						    <input type="text" value="{{old('alumno')}} "class="form-control mx-sm-3" id="alumno" name="alumno" placeholder="" required>
 						    <label for="grado" class="required">De</label>
-						    <input type="text" value="{{old('grado')}} "class="form-control mx-sm-3" id="grado" name="grado" placeholder=""><label>grado del Colegio Golda Meir.</label>
+						    <input type="text" value="{{old('grado')}} "class="form-control mx-sm-3" id="grado" name="grado" placeholder="" required><label>grado del Colegio Golda Meir.</label>
 						    @error('grado')
 						    	<small>*{{$message}}</small>
 						    @enderror
@@ -769,12 +769,12 @@
 						      <option value="3">Responsable</option>
 						    </select>
 						    <label for="dui" class="required ">Con Dui No.</label>
-						    <input type="text" value="{{old('dui')}} "class="form-control mx-sm-3" id="dui" name="dui" placeholder="">
+						    <input type="text" value="{{old('dui')}} "class="form-control mx-sm-3" id="dui" name="dui" placeholder="Ej. 125698505" required>
 						    @error('parentescoContacto2')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						    <label for="alumno" class="required">En mi responsabilidad de Padre/Madre/Responsable del estudiante </label>
-						    <input type="text" value="{{old('alumno')}} "class="form-control mx-sm-3" id="alumno" name="alumno" placeholder="">
+						    <input type="text" value="{{old('alumno')}} "class="form-control mx-sm-3" id="alumno" name="alumno" placeholder="" required>
 						</div>
 	
 				  	</div>
@@ -783,12 +783,12 @@
 				  		
 						<div class="form-group">
 						    <label for="grado" class="required">De</label>
-						    <input type="text" value="{{old('grado')}} "class="form-control mx-sm-3" id="grado" name="grado" placeholder=""><label>años de edad </label>
+						    <input type="text" value="{{old('grado')}} "class="form-control mx-sm-3" id="grado" name="grado" placeholder="" required><label>años de edad, &nbsp;</label>
 						    @error('grado')
 						    	<small>*{{$message}}</small>
 						    @enderror
-						    <label for="grado" class="required">Que cursa</label>
-						    <input type="text" value="{{old('grado')}} "class="form-control mx-sm-3" id="grado" name="grado" placeholder=""><label>grado del Colegio Golda Meir.</label>
+						    <label for="grado" class="required"> que cursa</label>
+						    <input type="text" value="{{old('grado')}} "class="form-control mx-sm-3" id="grado" name="grado" placeholder="" required><label>grado del Colegio Golda Meir.</label>
 						    @error('grado')
 						    	<small>*{{$message}}</small>
 						    @enderror

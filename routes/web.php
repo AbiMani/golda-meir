@@ -27,5 +27,7 @@ Route::get('/formularioInscripcion', 'formularioInscripcionController@index')->n
 
 Route::post('nuevoingreso','formularioInscripcionController@store')->name('nuevoingreso');
 
-
-Route::get('download_formulario', 'formularioInscipcionController@download_formulario')->name('downloadForm');
+//prueba
+Route::get('/prueba', 'PruebaController@index')->name('prueba');
+Route::post('archivo','PruebaController@store')->name('archivo');
+Route::get('/download', 'PruebaController@getDownload')->name('download');

@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
 <section class="container-fluid">
-	<div class=" row py-5 mt-5 px-5 ">
-		<div class="col-sm-12 col-md-12 d-flex flex-column flex-sm-row">
+	<div class=" row py-5 mt-5 px-md-5 ">
+		<div class=" col-md-12 d-flex flex-column flex-sm-row">
 			<div class="w-25 float-left mr-5 d-none d-sm-block">
 				<img src="{{asset('image/golda-meir.jpeg')}}" alt="goldaMeir" class="img-fluid mt-3 rounded" >
 
@@ -11,11 +11,11 @@
 				</p>
 			</div>
 			<div class="col-sm-9 align-self-center">
-				<div class="row  color2 px-1 px-md-5 mt-3 d-flex justify-content-around">
+				<div class="row  color2  px-md-5 mt-3 d-flex justify-content-around">
 		
 					<div class="col-sm-12 col-md-8 text-justify order-12">
 						<p class="lead ">
-			                Ser una institucion educativa de calidad, basada en los valores cristianos, principios morales y éticos, cimentando el amor a Dios, la formación integral y la adquisición de nuevos idiomas. Formando asi ciudadanos integros, compettentes, pensantes, transformadores y de provecho a la sociedad.
+			                Ser una institución educativa de calidad, basada en los valores cristianos, principios morales y éticos, cimentando el amor a Dios, la formación integral y la adquisición de nuevos idiomas. Formando así ciudadanos íntegros, competentes, pensantes, transformadores y de provecho a la sociedad.
 			            </p>
 					</div>
 					<div class="col-sm-4 col-md-4 text-justify py-2 py-sm-5 d-flex align-items-center flex-column order-1 ">
@@ -31,7 +31,7 @@
 							
 					</div>
 					<div class="col-sm-12 col-md-8 text-justify order-12">
-						<p class="lead pt-2">Poner al alcance de la comunidad estudiantil un centro educativo cristiano con valores, educación integral y altos estándares educativos académicos, capacitados y dotados con diferentes recursos, equipo tecnológico y cientifico especializado, para favorecer el proceso de enseñannza aprendizaje y lograr la excelencia academica.</p>	
+						<p class="lead pt-2">Poner al alcance de la comunidad estudiantil un centro educativo cristiano con valores, educación integral y altos estándares educativos académicos, capacitados y dotados con diferentes recursos, equipo tecnológico y científico especializado, para favorecer el proceso de enseñanza aprendizaje y lograr la excelencia académica.</p>	
 					</div>		
 				</div>	
 			</div>
@@ -45,12 +45,12 @@
 
 	<div class="row color2 px-5 py-5">
 		<div class="col-sm-8 col-md-6  text-center">
-			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Educar con ecvelencia para la alta calidad espiritual y académica de los ciudadanos útiles a Dios y a la sociedad</p>
-			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Transformar por medio de la educación a los estudiantes en hombre y mujeres integros.</p>
-			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Desarrollar la eprsonalidad, las aptitudes y la capacidad mental y física de estos hasta el máximo de sus posibilidades.</p>
+			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Educar con excelencia para la alta calidad espiritual y académica de los ciudadanos útiles a Dios y a la sociedad</p>
+			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Transformar por medio de la educación a los estudiantes en hombres y mujeres íntegros/as.</p>
+			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Desarrollar la personalidad, las aptitudes, la capacidad mental y física de estos hasta el máximo de sus posibilidades.</p>
 			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Inculcar el respeto a los derechos humanos y a las libertades fundamentales y los principios consagrados en la Carta de las Naciones Unidas.</p>
-			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Inculcar el respeto a su familia, a su propia identidad cultural, a su idioma y a los valores del país donde vive, ó del que sea originario ya las civilizaciones distintas de la suya.</p>
-			<p class="lead  "><i class="fab fa-diaspora pr-2"></i>Prepararle para asumir una vida responsable en una sociedad libre, con espiritu de comprensión, paz, tolerancia, igualdad e inclusión.</p>
+			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Inculcar el respeto a su familia, a su propia identidad cultural, a su idioma, a los valores del país donde vive, ó del que sea originario y a las civilizaciones distintas de la suya.</p>
+			<p class="lead  "><i class="fab fa-diaspora pr-2"></i>Prepararle para asumir una vida responsable en una sociedad libre, con espíritu de comprensión, paz, tolerancia, igualdad e inclusión.</p>
 		</div>
 		<div class="col-sm-4 col-md-4 text-justify d-flex align-items-center flex-column">
 			<img src="{{asset('image/success.png')}}" alt="Mision" width="100" height="100">

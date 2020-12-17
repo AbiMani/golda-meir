@@ -6,7 +6,7 @@
   <body>
   </body>
   <main>
-    <h1>Fomulario de inscripcion de </h1>
+    <h1>Ficha de inscripción</h1>
 </main>
 
 </body>

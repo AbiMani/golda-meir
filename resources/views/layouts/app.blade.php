@@ -31,7 +31,7 @@
 
 <!-- Body -->
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top px-5">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top px-md-5">
         <a class="navbar-brand" href="{{ url('/') }}"><img src="image/goldaMeir.jpeg" width="50" height="50" class="d-inline-block mr-3 rounded-circle" alt="logo Colegio Golda Meir">Colegio Golda Meir</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -92,7 +92,7 @@
                 </div>
             </div>
             <div class="col-md-4 footer-col">
-                <h3>Acertate a nosotros</h3>
+                <h3>Acercate a nosotros</h3>
                 <div class="center-block">
                     <p><i class="fas fa-phone-square "></i> Tel: 2508-6869</p>
                     <p><i class="fas fa-at"></i> goldameir@gmail.com</p>
