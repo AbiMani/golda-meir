@@ -170,7 +170,7 @@
 				<a class="btn btn-outline-primary  btn-sm text-uppercase " href="{{url('download')}}"><i class="fas fa-file-word pr-2"></i>Descargar Ficha de Inscripción (DOCX)</a>
 			</div>
 			<div class="col-md-8">
-				<a class="btn btn-outline-danger  btn-sm text-uppercase " href="{{url('download')}}"><i class="fas fa-file-pdf pr-2 fa-2x pull-left"></i>Descargar Ficha de Inscripción (PDF)</a>
+				<a class="btn btn-outline-danger  btn-sm text-uppercase " href="{{url('downloadPDF')}}"><i class="fas fa-file-pdf pr-2 fa-2x pull-left"></i>Descargar Ficha de Inscripción (PDF)</a>
 			</div>
 			
 			

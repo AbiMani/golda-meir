@@ -31,3 +31,4 @@ Route::post('nuevoingreso','formularioInscripcionController@store')->name('nuevo
 Route::get('/prueba', 'PruebaController@index')->name('prueba');
 Route::post('archivo','PruebaController@store')->name('archivo');
 Route::get('/download', 'PruebaController@getDownload')->name('download');
+Route::get('/downloadPDF', 'PruebaController@getDownloadPDF')->name('downloadPDF');
