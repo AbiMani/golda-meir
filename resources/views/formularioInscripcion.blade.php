@@ -186,14 +186,14 @@
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="numeroDuiMadre" class="required">Dui</label><sub class="red ">*</sub>
+						    <label for="numeroDuiMadre" class="required">Dui</label><sub class="red ">*</sub><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('numeroDuiMadre')}} "class="form-control" id="numeroDuiMadre" name="numeroDuiMadre" placeholder="125698505" required>
 						    @error('numeroDuiMadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6  col-md-2">
-						    <label for="telefonoMadre" class="required">Número Teléfono</label><sub class="red ">*</sub>
+						    <label for="telefonoMadre" class="required">Número Teléfono</label><sub class="red ">*</sub><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('telefonoMadre')}} "class="form-control" id="telefonoMadre" name="telefonoMadre" placeholder="71540000" required>
 						    @error('telefonoMadre')
 						    	<small class="text-danger">*{{$message}}</small>
@@ -252,14 +252,14 @@
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="numeroDuiPadre" class="required">Dui</label><sub class="red ">*</sub>
+						    <label for="numeroDuiPadre" class="required">Dui </label><sub class="red ">*</sub><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('numeroDuiPadre')}} "class="form-control" id="numeroDuiPadre" name="numeroDuiPadre" placeholder="125698505" required>
 						    @error('numeroDuiPadre')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group  col-6 col-md-2">
-						    <label for="telefonoPadre" class="required">Número Teléfono</label><sub class="red ">*</sub>
+						    <label for="telefonoPadre" class="required">Número Teléfono</label><sub class="red ">*</sub><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('telefonoPadre')}} "class="form-control" id="telefonoPadre" name="telefonoPadre" placeholder="71540000" required> 
 						    @error('telefonoPadre')
 						    	<small class="text-danger">*{{$message}}</small>
@@ -318,14 +318,14 @@
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="numeroDuiRes" class="required">Dui</label><sub class="red ">*</sub>
+						    <label for="numeroDuiRes" class="required">Dui</label><sub class="red ">*</sub><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('numeroDuiRes')}} "class="form-control" id="numeroDuiRes" name="numeroDuiRes" placeholder="125698505" required>
 						    @error('numeroDuiRes')
 						    	<small class="text-danger">*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="telefonoRes" class="required">Número Teléfono</label><sub class="red ">*</sub>
+						    <label for="telefonoRes" class="required">Número Teléfono</label><sub class="red ">*</sub><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('telefonoRes')}} "class="form-control" id="telefonoRes" name="telefonoRes" placeholder="61250000" required>
 						    @error('telefonoRes')
 						    	<small class="text-danger">*{{$message}}</small>
@@ -388,9 +388,9 @@
 						    @enderror
 						  </div> 
 						  <div class="form-group col-4 col-md-2">
-						    <label for="peso" class="required">Peso: </label><sub class="red ">*</sub>
+						    <label for="peso" class="required">Peso: </label><sub class="red ">*</sub><small class="text-muted"> Lb.</small>
 						    <div>
-						    	<input type="text" value="{{old('peso')}} "class="form-control" id="peso" name="peso" placeholder="" required><small class="form-text text-muted">Lb.</small>
+						    	<input type="text" value="{{old('peso')}} "class="form-control" id="peso" name="peso" placeholder="" required>
 						    </div>
 						    
 						    @error('peso')
@@ -633,14 +633,14 @@
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="telContacto1" class="required">Teléfono Casa</label><sub class="red ">*</sub>
+						    <label for="telContacto1" class="required">Teléfono Casa</label><sub class="red ">*</sub><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('telContacto1')}} "class="form-control" id="telContacto1" name="telContacto1" placeholder="Ej. 22650000" required> 
 						    @error('telContacto1')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="celContacto1" class="required">Teléfono Celular</label><sub class="red ">*</sub>
+						    <label for="celContacto1" class="required">Teléfono Celular</label><sub class="red ">*</sub><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('celContacto1')}} "class="form-control" id="celContacto1" name="celContacto1" placeholder="Ej. 71940000" required>
 						    @error('celContacto1')
 						    	<small>*{{$message}}</small>
@@ -665,14 +665,14 @@
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="telContacto2" class="required">Teléfono Casa</label><sub class="red ">*</sub>
+						    <label for="telContacto2" class="required">Teléfono Casa</label><sub class="red ">*</sub><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('telContacto2')}} "class="form-control" id="telContacto2" name="telContacto2" placeholder="Ej. 26491131" required>
 						    @error('telContacto2')
 						    	<small>*{{$message}}</small>
 						    @enderror
 						</div>
 						<div class="form-group col-6 col-md-2">
-						    <label for="celContacto2" class="required">Teléfono Celular</label><sub class="red ">*</sub>
+						    <label for="celContacto2" class="required">Teléfono Celular</label><sub class="red ">*</sub><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('celContacto2')}} "class="form-control" id="celContacto2" name="celContacto2" placeholder="Ej. 25491141" required>
 						    @error('celContacto2')
 						    	<small>*{{$message}}</small>
@@ -695,7 +695,7 @@
 						      <option value="2">Madre</option>
 						      <option value="3">Responsable</option>
 						    </select>
-						    <label for="dui" class="required ">Con Dui No.</label>
+						    <label for="dui" class="required ">Con Dui No.</label><small class=" text-form text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('dui')}} "class="form-control mx-sm-3" id="dui" name="dui" placeholder="125698505" required>
 						    @error('parentescoContacto2')
 						    	<small>*{{$message}}</small>
@@ -768,7 +768,7 @@
 						      <option value="2">Madre</option>
 						      <option value="3">Responsable</option>
 						    </select>
-						    <label for="dui" class="required ">Con Dui No.</label>
+						    <label for="dui" class="required ">Con Dui No.</label><small class="text-muted">(sin signo)</small>
 						    <input type="text" value="{{old('dui')}} "class="form-control mx-sm-3" id="dui" name="dui" placeholder="Ej. 125698505" required>
 						    @error('parentescoContacto2')
 						    	<small>*{{$message}}</small>

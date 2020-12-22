@@ -95,7 +95,7 @@
                 <h3>Acercate a nosotros</h3>
                 <div class="center-block">
                     <p><i class="fas fa-phone-square "></i> Tel: 2508-6869</p>
-                    <p><i class="fas fa-at"></i> goldameir@gmail.com</p>
+                    <p><i class="fas fa-at"></i> goldameirsv@gmail.com</p>
                 </div>
                 
             </div>
