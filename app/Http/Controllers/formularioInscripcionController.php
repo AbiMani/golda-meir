@@ -45,30 +45,57 @@ class formularioInscripcionController extends Controller
             'tipoIngreso' => 'required|max:255',
             'nombreMadre' => 'required|max:255',
             'apellidoMadre' => 'required|max:255',
-            'numeroDuiMadre' => 'required|numeric|max:99999999',
+            'numeroDuiMadre' => 'required|numeric|min:99999999|max:99999999',
             'profesionMadre' => 'required|max:255',
             'lugarTrabajoMadre' => 'required|max:255',
-            'telefonoMadre' => 'required|numeric|max:99999999',
+            'telefonoMadre' => 'required|numeric|min:99999999|max:99999999',
             'correoMadre' => 'required|email',
             'direccionMadre' => 'required|max:255',
             'nombrePadre' => 'required|max:255',
             'apellidoPadre' => 'required|max:255',
-            'numeroDuiPadre' => 'required|numeric|max:99999999',
+            'numeroDuiPadre' => 'required|numeric|min:99999999|max:99999999',
             'profesionPadre' => 'required|max:255',
             'lugarTrabajoPadre' => 'required|max:255',
-            'telefonoPadre' => 'required|numeric|max:99999999',
+            'telefonoPadre' => 'required|numeric|min:99999999|max:99999999',
             'correoPadre' => 'required|email',
             'direccionPadre' => 'required|max:255',
             'nombreRes' => 'required|max:255',
             'apellidoRes' => 'required|max:255',
-            'numeroDuiRes' => 'required|numeric|max:99999999',
+            'numeroDuiRes' => 'required|numeric|min:99999999|max:99999999',
             'profesionRes' => 'required|max:255',
             'lugarTrabajoRes' => 'required|max:255',
-            'telefonoRes' => 'required|numeric|max:99999999',
+            'telefonoRes' => 'required|numeric|min:99999999|max:99999999',
             'correoRes' => 'required|email',
             'direccionRes' => 'required|max:255',
             'peso'=>'required',
             'talla'=>'required',
+            'nomContac'=>'required',
+            'parentescoContacto'=> 'required',
+            'telContacto'=>'required|numeric|min:99999999|max:99999999',
+            'celContacto'=>'required|numeric|min:99999999|max:99999999',
+            'nacionalidad'=>'required',
+
+
+        ]);
+
+        $request->messages([
+            'idMunicipio.required'=>'El campo municipio es obligatorio',
+            'numeroDuiMadre.min:99999999' =>'El numero Dui debe ser de 8 digitos, sin signo',
+            'numeroDuiPadre.min:99999999' =>'El numero Dui debe ser de 8 digitos, sin signo',
+            'numeroDuiRes.min:99999999' =>'El numero Dui debe ser de 8 digitos, sin signo',
+            'numeroDuiMadre.max:99999999' =>'El numero Dui debe ser de 8 digitos, sin signo',
+            'numeroDuiPadre.max:99999999' =>'El numero Dui debe ser de 8 digitos, sin signo',
+            'numeroDuiRes.max:99999999' =>'El numero Dui debe ser de 8 digitos, sin signo',
+            'telefonoMadre.max:99999999' =>'Debe ser de 8 digitos, sin signo',
+            'telefonoPadre.max:99999999' =>'Debe ser de 8 digitos, sin signo',
+            'telefonoRes.max:99999999' =>'Debe ser de 8 digitos, sin signo',
+            'telefonoMadre.min:99999999' =>'Debe ser de 8 digitos, sin signo',
+            'telefonoPadre.min:99999999' =>'Debe ser de 8 digitos, sin signo',
+            'telefonoRes.min:99999999' =>'Debe ser de 8 digitos, sin signo',
+            'telContacto.max:99999999' =>'Debe ser de 8 digitos, sin signo',
+            'telContacto.min:99999999' =>'Debe ser de 8 digitos, sin signo',
+            'celContacto.max:99999999' =>'Debe ser de 8 digitos, sin signo',
+            'celContacto.min:99999999' =>'Debe ser de 8 digitos, sin signo',
         ]);
 
 
@@ -253,7 +280,7 @@ class formularioInscripcionController extends Controller
         Storage::disk('public')->put($nombreArchivo,$pdf);
         //envio de email
         Mail::send('mail.emailInscripcion', compact('estu'), function ($mail) use ($nombreArchivo,$subject) {
-           $mail->to('nayomi.viana@gmail.com');
+           $mail->to('colegiogoldameirsv@gmail.com');
            $mail->attach(public_path(). "/storage/".$nombreArchivo);
            $mail->subject("Nueva Inscripcion de alumno/a ".$subject);
         });
