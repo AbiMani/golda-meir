@@ -67,7 +67,7 @@
         <div class="col-sm-4 col-md-4 pt-3 px-5">
             <h3 class="display-4 text-center pb-3">Noticias</h3>
             <div class="fac-container">
-                <div class="fb-post" data-href="https://www.facebook.com/colegiogoldameir/posts/3549733338450360" data-show-text="true" data-width="300"><blockquote cite="https://www.facebook.com/colegiogoldameir/posts/3549733338450360" class="fb-xfbml-parse-ignore"><p>Esta opción es válida para niños de antiguo y nuevo ingreso. Llamenos o visítenos es nuestro deseo que sea parte de esta institución educativa. Dios les bendiga. Válido en mes de noviembre y diciembre 2020.</p>Publicado por <a href="https://www.facebook.com/colegiogoldameir/">Colegio Golda Meir</a> en&nbsp;<a href="https://www.facebook.com/colegiogoldameir/posts/3549733338450360">Martes, 1 de diciembre de 2020</a></blockquote></div>
+                <div class="fb-post" data-href="https://www.facebook.com/colegiogoldameir/posts/3625712220852471" data-width="300" data-show-text="true"><blockquote cite="https://www.facebook.com/colegiogoldameir/posts/3625712220852471" class="fb-xfbml-parse-ignore"><p>50% descuento en matricula para parvularia y basica de primer grado a sexto, mas 11 mensualidades de enero a noviembre. a partir de Enero de 2021. Mas info: www.colegiogoldameir.com</p>Publicado por <a href="https://www.facebook.com/colegiogoldameir/">Colegio Golda Meir</a> en&nbsp;<a href="https://www.facebook.com/colegiogoldameir/posts/3625712220852471">Viernes, 1 de enero de 2021</a></blockquote></div>
 
   
             </div>
