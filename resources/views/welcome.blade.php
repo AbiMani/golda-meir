@@ -13,7 +13,7 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active" style="">
-            <img class="d-block w-100" src="image/carrusel1.jpeg" alt="First slide">
+            <img class="d-block w-100" src="image/anuncio_pagina_web2021_1jpeg" alt="First slide">
         </div>
         <div class="carousel-item" >
             <img class="d-block w-100" src="image/carrusel2.jpeg" alt="Second slide">
@@ -44,9 +44,9 @@
 <div class="container-fluid">
     <div class="row color1 py-5 ">
         <div class="col-sm-9 col-md-8">
-            <h1 class="display-4">Inscripción 2021</h1>
+            <h1 class="display-4">Inscripción 2022</h1>
             <p class="lead">
-               En esta sección puede ver lo necesario para nuevo ingreso en el año 2021 
+               En esta sección puede ver lo necesario para nuevo ingreso en el año 2022 
             </p>
             <!--<img width="100px" src="/storage/7ebBkPH1WbI9odrFayAVE77N8lkem3nCX5GncVs7.jpg" >-->
         </div>
