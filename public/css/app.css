@@ -4706,6 +4706,7 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  
 }
 
 abbr[title],
@@ -7562,9 +7563,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-dark {
-  color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
+  color: black;
+  background-color: #faf20c;
+  border-color: #faf20c;
 }
 
 .btn-dark:hover {

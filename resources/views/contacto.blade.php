@@ -43,6 +43,14 @@
 			    </div>
 			    <div class="d-flex flex-row mt-4">
 			    	<div class="col-md-6">
+			    		<h5 class="font-weight-bold">Whatsapp</h5>	
+			    	</div>
+			    	<div class="col-md-6">
+			    		<h5>7521-8667</h5>
+			    	</div>
+			    </div>
+			    <div class="d-flex flex-row mt-4">
+			    	<div class="col-md-6">
 			    		<h5 class="font-weight-bold">Telefono</h5>	
 			    	</div>
 			    	<div class="col-md-6">

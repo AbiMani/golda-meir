@@ -2,7 +2,7 @@
 
 @section('content')
 <!--carrouserl-->
-<div id="carouselExampleIndicators" class="carousel slide pt-5" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide pt-5 mt-3 " data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -42,12 +42,12 @@
 </div>
 <!--carrouserl-->
 <div class="container-fluid">
-    <div class="row color1 py-5 ">
+    <div class="row colorhome py-5 ">
         <div class="col-sm-9 col-md-8">
             <h1 class="display-4">Inscripción 2022</h1>
-            <p class="lead">
+            <h4 >
                En esta sección puede ver lo necesario para nuevo ingreso en el año 2022 
-            </p>
+            </h4>
             <!--<img width="100px" src="/storage/7ebBkPH1WbI9odrFayAVE77N8lkem3nCX5GncVs7.jpg" >-->
         </div>
         <div class="col-sm-2 col-md-2">

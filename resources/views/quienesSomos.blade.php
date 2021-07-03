@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <section class="container-fluid">
-	<div class=" row py-5 mt-5 px-md-5 ">
+	<div class=" row color1 py-5 mt-5 px-md-5 ">
 		<div class=" col-md-12 d-flex flex-column flex-sm-row">
 			<div class="w-25 float-left mr-5 d-none d-sm-block">
 				<img src="{{asset('image/golda-meir.jpeg')}}" alt="goldaMeir" class="img-fluid mt-3 rounded" >
@@ -11,7 +11,7 @@
 				</p>
 			</div>
 			<div class="col-sm-9 align-self-center">
-				<div class="row  color2  px-md-5 mt-3 d-flex justify-content-around">
+				<div class="row  colorhome  px-md-5 mt-3 d-flex justify-content-around">
 		
 					<div class="col-sm-12 col-md-8 text-justify order-12">
 						<p class="lead ">
@@ -24,7 +24,7 @@
 						
 					</div>
 				</div>
-				<div class="row color1 px-1 px-md-5 mt-5 d-flex justify-content-around">
+				<div class="row colorhome px-1 px-md-5 mt-5 d-flex justify-content-around">
 					<div class="col-sm-4 col-md-4 text-justify  py-2 py-sm-5 d-flex align-items-center flex-column order-1">
 						<img src="{{asset('image/target.png')}}" alt="Mision" width="100" height="100" class="img-fluid ">
 						<h1 class=" display-4 mt-3">Misión</h1>
@@ -43,14 +43,19 @@
 
 	
 
-	<div class="row color2 px-5 py-5">
+	<div class="row colorhome px-5 py-5">
 		<div class="col-sm-8 col-md-6  text-center">
-			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Educar con excelencia para la alta calidad espiritual y académica de los ciudadanos útiles a Dios y a la sociedad</p>
-			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Transformar por medio de la educación a los estudiantes en hombres y mujeres íntegros/as.</p>
-			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Desarrollar la personalidad, las aptitudes, la capacidad mental y física de estos hasta el máximo de sus posibilidades.</p>
-			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Inculcar el respeto a los derechos humanos y a las libertades fundamentales y los principios consagrados en la Carta de las Naciones Unidas.</p>
-			<p class="lead "><i class="fab fa-diaspora pr-2"></i>Inculcar el respeto a su familia, a su propia identidad cultural, a su idioma, a los valores del país donde vive, ó del que sea originario y a las civilizaciones distintas de la suya.</p>
-			<p class="lead  "><i class="fab fa-diaspora pr-2"></i>Prepararle para asumir una vida responsable en una sociedad libre, con espíritu de comprensión, paz, tolerancia, igualdad e inclusión.</p>
+			<p class="lead "><i class="fab  pr-2"></i>Educar con excelencia para la alta calidad espiritual y académica de los ciudadanos útiles a Dios y a la sociedad</p>
+			<hr class="my-4">
+			<p class="lead "><i class="fab  pr-2"></i>Transformar por medio de la educación a los estudiantes en hombres y mujeres íntegros/as.</p>
+			<hr class="my-4">
+			<p class="lead "><i class="fab  pr-2"></i>Desarrollar la personalidad, las aptitudes, la capacidad mental y física de estos hasta el máximo de sus posibilidades.</p>
+			<hr class="my-4">
+			<p class="lead "><i class="fab  pr-2"></i>Inculcar el respeto a los derechos humanos y a las libertades fundamentales y los principios consagrados en la Carta de las Naciones Unidas.</p>
+			<hr class="my-4">
+			<p class="lead "><i class="fab  pr-2"></i>Inculcar el respeto a su familia, a su propia identidad cultural, a su idioma, a los valores del país donde vive, ó del que sea originario y a las civilizaciones distintas de la suya.</p>
+			<hr class="my-4">
+			<p class="lead  "><i class="fab  pr-2"></i>Prepararle para asumir una vida responsable en una sociedad libre, con espíritu de comprensión, paz, tolerancia, igualdad e inclusión.</p>
 		</div>
 		<div class="col-sm-4 col-md-4 text-justify d-flex align-items-center flex-column">
 			<img src="{{asset('image/success.png')}}" alt="Mision" width="100" height="100">
@@ -68,14 +73,14 @@
 		<div class="col-sm-8 col-md-8 text-justify">
 			<div class="row d-flex justify-content-around">
 				<div class="col-md-6">
-					<p class="lead pt-5 text-center">Amor</p>
-					<p class="lead pt-1 text-center ">Respeto</p>
-					<p class="lead pt-1 text-center ">Responsabilidad</p>
+					<h3 class="pt-5 text-center">Amor</h3>
+					<h3 class="pt-1 text-center ">Respeto</h3>
+					<h3 class="pt-1 text-center ">Responsabilidad</h3>
 				</div>
 				<div class="col-md-6">
-					<p class="lead pt-5 text-center">Familia</p>
-					<p class="lead pt-1 text-center ">Equidad</p>
-					<p class="lead pt-1 text-center ">Integridad</p>
+					<h3 class="pt-5 text-center">Familia</h3>
+					<h3 class="pt-1 text-center ">Equidad</h3>
+					<h3 class="pt-1 text-center ">Integridad</h3>
 				</div>
 			</div>
 		</div>

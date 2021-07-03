@@ -94,6 +94,7 @@
             <div class="col-md-4 footer-col">
                 <h3>Acercate a nosotros</h3>
                 <div class="center-block">
+                    <p><i class="fab fa-whatsapp " ></i> Cel: 7521-8667</p>
                     <p><i class="fas fa-phone-square "></i> Tel: 2508-6869</p>
                     <p><i class="fas fa-at"></i> goldameirsv@gmail.com</p>
                 </div>
