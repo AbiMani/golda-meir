@@ -42,7 +42,7 @@
 </div>
 <!--carrouserl-->
 <div class="container-fluid">
-    <div class="row colorhome py-5 ">
+    <div class="row color1 py-5 ">
         <div class="col-sm-9 col-md-8">
             <h1 class="display-4">Inscripción 2022</h1>
             <h4 >
@@ -67,14 +67,16 @@
         <div class="col-sm-4 col-md-4 pt-3 px-5">
             <h3 class="display-4 text-center pb-3">Noticias</h3>
             <div class="fac-container">
-                <div class="fb-post" data-href="https://www.facebook.com/colegiogoldameir/posts/3625712220852471" data-width="300" data-show-text="true"><blockquote cite="https://www.facebook.com/colegiogoldameir/posts/3625712220852471" class="fb-xfbml-parse-ignore"><p>50% descuento en matricula para parvularia y basica de primer grado a sexto, mas 11 mensualidades de enero a noviembre. a partir de Enero de 2021. Mas info: www.colegiogoldameir.com</p>Publicado por <a href="https://www.facebook.com/colegiogoldameir/">Colegio Golda Meir</a> en&nbsp;<a href="https://www.facebook.com/colegiogoldameir/posts/3625712220852471">Viernes, 1 de enero de 2021</a></blockquote></div>
+                <div class="fb-post" data-href="https://www.facebook.com/colegiogoldameir/posts/4123476601076028" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/colegiogoldameir/posts/4123476601076028" class="fb-xfbml-parse-ignore"><p>¡𝔸𝕓𝕣𝕚𝕞𝕠𝕤 𝕟𝕦𝕖𝕧𝕒𝕞𝕖𝕟𝕥𝕖!
+
+                Por este medio, anunciamos que estamos aperturando el proceso de matrícula para el año escolar...</p>Publicado por <a href="https://www.facebook.com/colegiogoldameir/">Colegio Golda Meir</a> en&nbsp;<a href="https://www.facebook.com/colegiogoldameir/posts/4123476601076028">Lunes, 21 de junio de 2021</a></blockquote></div>
 
   
             </div>
         </div>
         <div class="col-sm-4 col-md-4 px-5 pt-5 mt-5">
            <div class="fac-container">
-                <div class="fb-post" data-href="https://www.facebook.com/colegiogoldameir/posts/3540074796082881" data-show-text="true" data-width="350"><blockquote cite="https://www.facebook.com/colegiogoldameir/posts/3540074796082881" class="fb-xfbml-parse-ignore"><p>Estimados Padres y Madres de Familia, el sábado 28 de Noviembre de 2020 a las 8 am. estaremos subiendo un video donde...</p>Publicado por <a href="https://www.facebook.com/colegiogoldameir/">Colegio Golda Meir</a> en&nbsp;<a href="https://www.facebook.com/colegiogoldameir/posts/3540074796082881">Viernes, 27 de noviembre de 2020</a></blockquote></div>
+                
             </div>
         </div>
         

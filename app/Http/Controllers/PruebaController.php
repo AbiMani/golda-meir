@@ -21,25 +21,25 @@ class PruebaController extends Controller
     public function getDownload()
     {
        //PDF file is stored under project/public/download/info.pdf
-       $file= public_path(). "/FICHA AÑO 2021.docx";
+       $file= public_path(). "/FICHA_AÑO_2022.docx";
 
        $headers = array(
                  'Content-Type: application/pdf',
                );
 
-       return Response::download($file, 'FICHA_AÑO_2021.docx', $headers);
+       return Response::download($file, 'FICHA_AÑO_2022.docx', $headers);
        //dd(public_path());
     }
     public function getDownloadPDF()
     {
        //PDF file is stored under project/public/download/info.pdf
-       $file= public_path(). "/FICHA AÑO 2021.pdf";
+       $file= public_path(). "/FICHA_AÑO_2022.pdf";
 
        $headers = array(
                  'Content-Type: application/pdf',
                );
 
-       return Response::download($file, 'FICHA_AÑO_2021.pdf', $headers);
+       return Response::download($file, 'FICHA_AÑO_2022.pdf', $headers);
        //dd(public_path());
     }
 }

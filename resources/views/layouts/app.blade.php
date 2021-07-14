@@ -77,7 +77,8 @@
         <div class="row">
             <div class="col-md-4 footer-col">
                 <h3>Dirección</h3>
-                <p>
+
+                <p><a href="https://g.page/goldameirsv?share" ><i id="map-fa" class="fas fa-map-marker-alt fa-2x social"></i></a>
                     23 Avenida Norte y 3a Calle poniente <br />
                     Atrás del Instituto Central de Señoritas <br/>
                     San Salvador

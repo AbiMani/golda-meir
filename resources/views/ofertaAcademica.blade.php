@@ -8,6 +8,7 @@
 			<div class="card text-center cardPar ">
 			  <div class="card-body">
 			  	<h3 class="card-title font-weight-bold text-uppercase">Parvularia</h3>
+			  	<hr class="my-4">
 			    <h4 class="card-text">Kinder 5 y Preparatoria</h4>
 			    <div class="d-flex flex-row mt-4">
 			    	<div class="col-md-6 ">
@@ -42,6 +43,7 @@
 			<div class="card text-center cardPri">
 			  <div class="card-body">
 			  	<h3 class="card-title font-weight-bold text-uppercase">Primaria</h3>
+			  	<hr class="my-4">
 			    <h4 class="card-text">1 a 6 Grado</h4>
 			    <div class="d-flex flex-row mt-4">
 			    	<div class="col-md-6">
@@ -76,10 +78,10 @@
 	<div class="row ">
 		<div class=" px-5 card-deck">
 		  <div class="card">
-		    <img class="card-img-top img-fluid" src="" alt="" style="background-color: #474711; height: 130px;">
-		    <div class="text-center">
+		    <img class="card-img-top img-fluid" src="image/formacion.jpg" alt="" style="background-color: #474711; height: 160px; ">
+		    <!--<div class="text-center">
 		    	<img src="image/evaluation.png" alt="" class="cardimage rounded-circle" height="100px" width="100px">
-		    </div>
+		    </div>-->
 		    <div class="card-body">
 		      <h4 class="card-title text-center text-uppercase font-weight-bold">Formación Integral</h4>
 		      <p class="card-text text-justify">Nuestro programa de estudio esta actualizado conforme a los requisitos exigidos por el MINED, procurando obtener el máximo de rendimiento en cada uno de sus estudiantes.</p>
@@ -87,10 +89,10 @@
 		    </div>
 		  </div>
 		  <div class="card">
-		    <img class="card-img-top img-fluid" src="" alt="" style="background-color: #474711; height: 130px;">
-		    <div class="text-center">
+		    <img class="card-img-top img-fluid" src="image/idioma.jpg" alt="" style="background-color: #474711; height: 160px;">
+		    <!--<div class="text-center">
 		    	<img src="image/blackboard.png" alt="" class="cardimage rounded-circle" height="100px" width="100px">
-		    </div>
+		    </div>-->
 		    <div class="card-body">
 		      <h4 class="card-title text-center text-uppercase font-weight-bold">Idioma Ingles</h4>
 		      <p class="card-text text-justify">La formación educativa en el idioma ingles aporta a los estudiantes ir más allá del aprendizaje de materias basicas extendiendo sus conomientos.</p>
@@ -98,10 +100,10 @@
 		    </div>
 		  </div>
 		  <div class="card">
-		    <img class="card-img-top img-fluid" src="" alt="" style="background-color: #474711; height: 130px;">
-		    <div class="text-center">
+		    <img class="card-img-top img-fluid" src="image/cristiana.jpg" alt="" style="background-color: #474711; height: 160px;">
+		    <!--<div class="text-center">
 		    	<img src="image/bible(1).png" alt="" class="cardimage rounded-circle" height="100px" width="100px " style="background-color: #f34f35">
-		    </div>
+		    </div>-->
 		    <div class="card-body">
 		      <h4 class="card-title text-center text-uppercase font-weight-bold">Educación Cristiana</h4>
 		      <p class="card-text text-justify">La base para alcanzar la transformación de los estudiantes es el conocimiento de valores morales y espirituales por medio de las Sagradas Escrituras.</p>
@@ -114,10 +116,10 @@
 	<div class="row d-flex justify-content-center">
 		<div class="col-md-9 pt-5 pb-3 px-5 card-deck ">
 		  <div class="card ">
-		    <img class="card-img-top img-fluid" src="" alt="" style="background-color: #474711; height: 130px; ">
-		    <div class="text-center">
+		    <img class="card-img-top img-fluid" src="image/musica.jpg" alt="" style="background-color: #474711; height: 160px; ">
+		    <!--<div class="text-center">
 		    	<img src="image/electric-guitar.png" alt="" class="cardimage rounded-circle" height="100px" width="100px">
-		    </div>
+		    </div>-->
 		    <div class="card-body">
 		      <h4 class="card-title text-center text-uppercase font-weight-bold">Educación Musical</h4>
 		      <p class="card-text text-justify">Como parte del desarrollo de los talentos dedicamos tiempo de nuestros estudios para la educación musical, consientes de la necesidad de desarrollar potencial hacia la música.</p>
@@ -125,10 +127,10 @@
 		    </div>
 		  </div>
 		  <div class="card ">
-		    <img class="card-img-top img-fluid" src="" alt="" style="background-color: #474711; height: 130px;">
-		    <div class="text-center">
+		    <img class="card-img-top img-fluid" src="image/fisica.jpg" alt="" style="background-color: #474711; height: 160px;">
+		    <!--<div class="text-center">
 		    	<img src="image/running.png" alt="" class="cardimage rounded-circle" height="100px" width="100px">
-		    </div>
+		    </div>-->
 		    <div class="card-body">
 		      <h4 class="card-title text-center text-uppercase font-weight-bold">Educación Física</h4>
 		      <p class="card-text text-justify">Para la óptima educación integral en los estudiantes y para que desarrollen adecuadamente sus habilidades fisicas-deportivas en sus respectivos niveles, mejorando y reforzando su sicomotricidad.</p>

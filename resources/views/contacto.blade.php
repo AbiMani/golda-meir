@@ -11,9 +11,9 @@
       }
     </script>
 <div class="conte">
-	<div class="row ">
-		<img src="image/contacto.jpg" alt="Snow" style="width:100%; height: 350px;">
-	<div class="centered"><h1 class="display-2">Contacto</h1></div>
+	<div class="row mt-4 pt-5">
+		<img src="image/contacto 1.jpg" alt="Snow" style="width:100%; height: 350px;">
+	
 		
 	</div>	
 </div>
@@ -23,6 +23,7 @@
 			<div class="card text-center ">
 			  <div class="card-body">
 			  	<h3 class="card-title font-weight-bold text-uppercase">Horario de Oficina</h3>
+			  	<hr class="my-4">
 			    <div class="d-flex flex-row mt-4">
 			    	<div class="col-md-6">
 			    		<h5 class="font-weight-bold">Lunes a Viernes</h5>	
@@ -61,6 +62,24 @@
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-6 my-5">
+			<div class=" text-center " >
+			  <div class="">
+			  	<div class="d-flex flex-row mt-4">
+			  		<div class="col-md-2">
+			    		<a href="https://g.page/goldameirsv?share" ><i class="fas fa-map-marker-alt fa-6x  ubication"></i></a>	
+			    	</div>
+			    	<div class="col-md-10">
+			    		
+			    		<img src="image/direccion.jpeg" alt="Snow" style="width:100%; height: 365px;"> 
+			    	</div>
+			  	</div>
+			    
+			  </div>
+			</div>
+		</div>
+
+		<!--
+		<div class="col-sm-12 col-md-6 my-5">
 			<div class="card text-center " style="height: 20rem;">
 			  <div class="card-body">
 			  	<div class="map-container">
@@ -70,7 +89,7 @@
 			  </div>
 			</div>
 		</div>
-
+		-->
 	</div>	
 </div>
 @endsection

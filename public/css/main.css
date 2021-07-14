@@ -276,6 +276,16 @@ footer .footer-below {
      color: white;
      
  }
+
+ .ubication:hover {
+     -webkit-transform: scale(1.0);
+     -webkit-transition-duration: 0.5s;
+ }
+ .ubication {
+     -webkit-transform: scale(0.8);
+     color: #faf20c;
+     
+ }
  .btn-ye{
     background-color: #faf20c;
  }
