@@ -12,7 +12,7 @@
     </script>
 <div class="conte">
 	<div class="row mt-4 pt-5">
-		<img src="image/contacto 1.jpg" alt="Snow" style="width:100%; height: 350px;">
+		<img  class="d-block w-100" src="image/contacto 1.jpg" alt="Snow" style="width:100%; ">
 	
 		
 	</div>	
@@ -61,14 +61,14 @@
 			  </div>
 			</div>
 		</div>
-		<div class="col-sm-12 col-md-6 my-5">
+		<div class="col-sm-12 col-md-6 my-sm-5 pb-5">
 			<div class=" text-center " >
 			  <div class="">
-			  	<div class="d-flex flex-row mt-4">
-			  		<div class="col-md-2">
+			  	<div class="d-sm-flex flex-sm-row mt-sm-4">
+			  		<div class="col-md-2 col-xs-2">
 			    		<a href="https://g.page/goldameirsv?share" ><i class="fas fa-map-marker-alt fa-6x  ubication"></i></a>	
 			    	</div>
-			    	<div class="col-md-10">
+			    	<div class="col-md-10 col-sm-12">
 			    		
 			    		<img src="image/direccion.jpeg" alt="Snow" style="width:100%; height: 365px;"> 
 			    	</div>
